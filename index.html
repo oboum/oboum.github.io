@@ -1,350 +1,1459 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Osama Boumelhem | Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Icons + Fonts -->
-  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- Header / Nav -->
-  <header class="l-header">
-    <nav class="nav bd-grid">
-      <!-- Mobile toggle (CSS-only) -->
-      <input type="checkbox" id="nav-toggle" class="nav__checkbox" aria-label="Open navigation">
-      <label for="nav-toggle" class="nav__toggle"><i class="bx bx-menu"></i></label>
+    <!-- ===== BOX ICONS ===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-      <a href="#" class="nav__logo">Osama</a>
-
-      <div class="nav__menu">
-        <label for="nav-toggle" class="nav__close"><i class="bx bx-x"></i></label>
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-          <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-          <li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
-          <li class="nav__item"><a href="#testimonials" class="nav__link">Testimonials</a></li>
-          <li class="nav__item"><a href="#skills-showcase" class="nav__link">Skills Showcase</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <main class="l-main">
-    <!-- Home -->
-    <section class="home" id="home">
-      <div class="home__container bd-grid">
-        <div class="home__data">
-          <div class="home__img">
-            <!-- Replace with your headshot -->
-            <img src="https://via.placeholder.com/300x300.png?text=OB" alt="Portrait">
-          </div>
-
-          <h1 class="home__title">Osama Boumelhem</h1>
-          <span class="home__profession">AI × Design • Product & Gamification</span>
-
-          <div class="home__social">
-            <a class="home__social-link" href="https://github.com/oboum" target="_blank" rel="noreferrer"><i class="bx bxl-github"></i></a>
-            <a class="home__social-link" href="https://www.linkedin.com" target="_blank" rel="noreferrer"><i class="bx bxl-linkedin"></i></a>
-            <a class="home__social-link" href="mailto:osama@example.com"><i class="bx bx-envelope"></i></a>
-          </div>
-
-          <!-- Link this to your PP item online presence -->
-          <a class="button home__button" href="#works">View my PP item</a>
+    <title>Osama Boumelhem | Portfolio</title>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
         </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="about section" id="about">
-      <span class="section-subtitle">My Intro</span>
-      <h2 class="section-title">About Me</h2>
-
-      <div class="about__container bd-grid">
-        <div class="about__data">
-          <p class="about__description">
-            I’m a CMGT student and AI × Design intern focused on onboarding, motion design, and
-            gamification. I prototype quickly, ship clean UI, and back decisions with research.
-          </p>
-
-          <div class="about__information">
-            <h3 class="about__information-title">Information</h3>
-            <div class="about__information-data">
-              <i class="bx bx-user about__information-icon"></i>
-              <span>Osama Boumelhem</span>
-            </div>
-            <div class="about__information-data">
-              <i class="bx bx-map about__information-icon"></i>
-              <span>Enschede, NL</span>
-            </div>
-            <div class="about__information-data">
-              <i class="bx bx-envelope about__information-icon"></i>
-              <span>osama@example.com</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="about__stats">
-          <div class="about__information">
-            <h3 class="about__information-title">Highlights</h3>
-
-            <div class="about__information-data">
-              <i class="bx bx-medal about__information-icon"></i>
-              <div>
-                <span class="about__information-subtitle">Gamification Audit + Proposal</span>
-                <span class="about__information-subtitle-small">Internship Project</span>
-              </div>
-            </div>
-
-            <div class="about__information-data">
-              <i class="bx bx-joystick about__information-icon"></i>
-              <div>
-                <span class="about__information-subtitle">Bugaboo Planet UI/UX</span>
-                <span class="about__information-subtitle-small">Mini-games & Transitions</span>
-              </div>
-            </div>
-
-            <div class="about__information-data">
-              <i class="bx bx-book about__information-icon"></i>
-              <div>
-                <span class="about__information-subtitle">CMGT @ Saxion</span>
-                <span class="about__information-subtitle-small">Year 2+</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="skills section" id="skills">
-      <span class="section-subtitle">Professional Expertise</span>
-      <h2 class="section-title">Technical Skills</h2>
-
-      <div class="skills__container bd-grid">
-        <div class="skills__content">
-          <h3 class="skills__subtitle">Core</h3>
-          <div class="skills-list">
-            <span class="skill-tag"><i class="bx bx-layout"></i> UX / UI</span>
-            <span class="skill-tag"><i class="bx bx-bulb"></i> Onboarding</span>
-            <span class="skill-tag"><i class="bx bx-cuboid"></i> Motion (Rive)</span>
-            <span class="skill-tag"><i class="bx bx-game"></i> Gamification</span>
-            <span class="skill-tag"><i class="bx bx-spreadsheet"></i> CIMO / Octalysis</span>
-            <span class="skill-tag"><i class="bx bxl-figma"></i> Figma</span>
-          </div>
-        </div>
-
-        <div class="skills__content">
-          <h3 class="skills__subtitle">Also</h3>
-          <div class="skills-list">
-            <span class="skill-tag"><i class="bx bx-code-alt"></i> HTML/CSS</span>
-            <span class="skill-tag"><i class="bx bx-bot"></i> Prompting</span>
-            <span class="skill-tag"><i class="bx bx-bar-chart"></i> Research & Testing</span>
-            <span class="skill-tag"><i class="bx bx-movie-play"></i> Micro‑copy</span>
-            <span class="skill-tag"><i class="bx bx-git-branch"></i> Git</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section class="education section" id="education">
-      <span class="section-subtitle">Qualification</span>
-      <h2 class="section-title">My Education</h2>
-
-      <div class="education__container bd-grid">
-        <div class="education__content">
-          <div>
-            <h3 class="education__year">2023 – Present</h3>
-            <span class="education__university">Saxion University of Applied Sciences</span>
-          </div>
-
-          <div class="education__time">
-            <span class="education__rounder"></span>
-            <span class="education__line"></span>
-          </div>
-
-          <div>
-            <h3 class="education__race">BSc — CMGT</h3>
-            <span class="education__specialty">Creative Media & Game Technologies</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Works -->
-    <section class="works section" id="works">
-      <span class="section-subtitle">My Portfolio</span>
-      <h2 class="section-title">Recent Works</h2>
-
-      <div class="works__container">
-        <!-- Card 1 -->
-        <a class="works__img" href="https://your-link-to-pp-item.example" target="_blank" rel="noreferrer">
-          <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1200&auto=format&fit=crop" alt="Project cover">
-          <div class="works__data">
-            <span class="works__title">PP Item — Onboarding Revamp</span>
-          </div>
-        </a>
-
-        <!-- Card 2 -->
-        <a class="works__img" href="#" target="_blank" rel="noreferrer">
-          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1200&auto=format&fit=crop" alt="Project cover">
-          <div class="works__data">
-            <span class="works__title">Gamification Audit</span>
-          </div>
-        </a>
-
-        <!-- Card 3 -->
-        <a class="works__img" href="#" target="_blank" rel="noreferrer">
-          <img src="https://images.unsplash.com/photo-1551817958-20204e76aa02?q=80&w=1200&auto=format&fit=crop" alt="Project cover">
-          <div class="works__data">
-            <span class="works__title">Motion Design (Rive)</span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials section" id="testimonials">
-      <span class="section-subtitle">What Others Say</span>
-      <h2 class="section-title">Testimonials</h2>
-
-      <div class="testimonials__container bd-grid">
-        <article class="testimonial__card">
-          <div class="testimonial__content">
-            <div class="testimonial__quote"><i class="bx bxs-quote-alt-left"></i></div>
-            <p class="testimonial__description">
-              “Osama brings sharp UX thinking and fast iteration. Our onboarding concepts leveled up.”
-            </p>
-            <div class="testimonial__details">
-              <h3 class="testimonial__name">CPO, Lila</h3>
-              <span class="testimonial__position">Product Lead</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="testimonial__card">
-          <div class="testimonial__content">
-            <div class="testimonial__quote"><i class="bx bxs-quote-alt-left"></i></div>
-            <p class="testimonial__description">
-              “Strong copy + design sense; turns research into shippable micro‑copy and flows.”
-            </p>
-            <div class="testimonial__details">
-              <h3 class="testimonial__name">Design Mentor</h3>
-              <span class="testimonial__position">Senior UX</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Skills Showcase -->
-    <section class="skills-showcase section" id="skills-showcase">
-      <span class="section-subtitle">Software Development</span>
-      <h2 class="section-title">Professional Experience</h2>
-
-      <div class="skills-showcase__container bd-grid">
-        <div class="skills-category">
-          <h3 class="skills-category__title">Product & UX</h3>
-          <div class="skills-list">
-            <span class="skill-tag"><i class="bx bx-map-alt"></i> User flows</span>
-            <span class="skill-tag"><i class="bx bx-test-tube"></i> Usability testing</span>
-            <span class="skill-tag"><i class="bx bx-target-lock"></i> A/B hypotheses</span>
-          </div>
-        </div>
-
-        <div class="skills-category">
-          <h3 class="skills-category__title">Systems</h3>
-          <div class="skills-list">
-            <span class="skill-tag"><i class="bx bx-badge-check"></i> Streaks</span>
-            <span class="skill-tag"><i class="bx bx-trophy"></i> Achievements</span>
-            <span class="skill-tag"><i class="bx bx-bell"></i> On‑open nudges</span>
-          </div>
-        </div>
-
-        <div class="skills-category">
-          <h3 class="skills-category__title">Implementation</h3>
-          <div class="skills-list">
-            <span class="skill-tag"><i class="bx bx-shape-square"></i> Rive animations</span>
-            <span class="skill-tag"><i class="bx bx-code-block"></i> Prototyping</span>
-            <span class="skill-tag"><i class="bx bx-cloud-upload"></i> Handoff</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Project -->
-    <section class="project section">
-      <div class="project__container bd-grid">
-        <div class="project__data">
-          <h2 class="section-title project__title">Have a project in mind?</h2>
-          <p class="project__description">
-            I love fast iteration with measurable outcomes. Let’s chat about how I can help.
-          </p>
-          <a href="#contact" class="button button__light">Contact Me</a>
-        </div>
-
-        <img class="project__img" alt="Project illustration"
-             src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1200&auto=format&fit=crop">
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="contact section" id="contact">
-      <span class="section-subtitle">Contact Me</span>
-      <h2 class="section-title">Get In Touch</h2>
-
-      <div class="contact__container bd-grid">
-        <form class="contact__form" action="https://formspree.io/f/your-id" method="post">
-          <div class="contact__inputs">
-            <input class="contact__input" type="text" name="Name" placeholder="Name" required>
-            <input class="contact__input" type="email" name="Email" placeholder="Email" required>
-          </div>
-          <input class="contact__input" type="text" name="Subject" placeholder="Subject">
-          <textarea class="contact__input" name="Message" rows="8" placeholder="Message"></textarea>
-          <button class="button contact__button" type="submit">Send Message</button>
-        </form>
 
         <div>
-          <div class="contact__info">
-            <h3 class="contact__subtitle">Call</h3>
-            <span class="contact__text">+31 000 000 000</span>
+          <a href="#" class="nav__logo">Osama</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
           </div>
-          <div class="contact__info">
-            <h3 class="contact__subtitle">E‑mail</h3>
-            <span class="contact__text">osama@example.com</span>
-          </div>
-          <div class="contact__info">
-            <h3 class="contact__subtitle">Location</h3>
-            <span class="contact__text">Enschede – Netherlands</span>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#works" class="nav__link">Works</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills-showcase" class="nav__link">Skills Showcase</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home" id="home">
+        <div class="home__container bd-grid">
+          <div class="home__data">
+            <div class="home__img">
+              <img src="assets/img/pp_nobg.png" alt="" />
+            </div>
+
+            <h1 class="home__title">Osama Boumelhem</h1>
+            <span class="home__profession">Game Designer</span>
+
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/osama-boumelhem-442846257/"
+                class="home__social-link"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+              <a href="#" class="home__social-link"
+                ><i class="bx bxl-github"></i> </a
+              ><a href="#" class="home__social-link"
+                ><i class="bx bx-dock-top"></i
+              ></a>
+            </div>
+
+            <a
+              download=""
+              href="OsamaBoumelhem_CV.pdf"
+              class="button home__button"
+              >Download my CV</a
+            >
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <!-- Footer -->
-  <footer class="footer section">
-    <div class="footer__container bd-grid">
-      <h1 class="footer__title">Osama Boumelhem</h1>
-      <p class="footer__description">AI × Design — Portfolio</p>
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <span class="section-subtitle">My Intro</span>
+        <h2 class="section-title">About Me</h2>
 
-      <div class="footer__social">
-        <a class="footer__link" href="https://github.com/oboum" target="_blank" rel="noreferrer"><i class="bx bxl-github"></i></a>
-        <a class="footer__link" href="https://www.linkedin.com" target="_blank" rel="noreferrer"><i class="bx bxl-linkedin"></i></a>
-        <a class="footer__link" href="#contact"><i class="bx bx-mail-send"></i></a>
+        <div class="about__container bd-grid">
+          <div class="about__data">
+            <p class="about__description">
+              Hi, I'm a game designer, passionate about creating and developing
+              games. I am very self-motivated and always striving to improve and
+              learn new things.
+            </p>
+
+            <!--
+                        <section class="game">
+                            <div class="game-container">
+                                <h3 class="game-title">Interactive Portfolio Demo</h3>
+                                <canvas id="unity-canvas"></canvas>
+                                <div class="game-controls">
+                                    <div id="fullScreen" style="text-align: center; color: #486F9E; height:20px; width: %UNITY_WIDTH%px;cursor:pointer;">
+                                        <span class="fullscreen-text"><i class='bx bx-fullscreen'></i> Click here to play in fullscreen</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        -->
+            <!-- <img src="assets/img/about.png" alt="" class="about__img"> -->
+          </div>
+
+          <div>
+            <div class="about__information">
+              <h3 class="about__information-title">Information</h3>
+
+              <div class="about__information-data">
+                <i class="bx bx-user about__information-icon"></i>
+                <span>Osama Boumelhem</span>
+              </div>
+
+              <div class="about__information-data">
+                <i class="bx bx-phone about__information-icon"></i>
+                <span>+31 6 39765184</span>
+              </div>
+
+              <div class="about__information-data">
+                <i class="bx bx-envelope about__information-icon"></i>
+                <span>oboumelhem@gmail.com</span>
+              </div>
+            </div>
+
+            <!--
+            <div class="about__information">
+              <h3 class="about__information-title">Experience and support</h3>
+
+              <div class="about__information-data">
+                <i class="bx bx-medal about__information-icon"></i>
+                <div>
+                  <span class="about__information-subtitle"
+                    >3 years of paid employment</span
+                  >
+                  <span class="about__information-subtitle-small"
+                    >Experience</span
+                  >
+                </div>
+              </div>
+
+              <div class="about__information-data">
+                <i class="bx bx-briefcase-alt about__information-icon"></i>
+                <div>
+                  <span class="about__information-subtitle">75+ Projects</span>
+                  <span class="about__information-subtitle-small"
+                    >Completed</span
+                  >
+                </div>
+              </div>
+
+              <div class="about__information-data">
+                <i class="bx bx-support about__information-icon"></i>
+                <div>
+                  <span class="about__information-subtitle">Education</span>
+                  <span class="about__information-subtitle-small"
+                    >Saxion University of Applied Sciences</span
+                  >
+                </div>
+              </div>
+            </div>
+            -->
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <span class="section-subtitle">Professional Expertise</span>
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div class="skills__content">
+            <h3 class="skills__subtitle">Core Competencies</h3>
+            <div class="skills-list">
+              <div class="skill-tag">
+                <img
+                  src="assets/img/icons/unity-logo.svg"
+                  class="custom-icon"
+                  alt="Unity logo"
+                />
+                Unity Development
+              </div>
+              <div class="skill-tag">
+                <i class="bx bx-code-alt"></i> C# Programming
+              </div>
+              <div class="skill-tag">
+                <i class="bx bx-cog"></i> Tooling & Systems
+              </div>
+
+              <div class="skill-tag">
+                <i class="bx bx-joystick"></i> Game Feel & Feedback
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__content">
+            <h3 class="skills__subtitle">Additional Skills</h3>
+            <div class="skills-list">
+              <div class="skill-tag">
+                <i class="bx bx-user-voice"></i> Narrative design
+              </div>
+              <div class="skill-tag">
+                <i class="bx bx-palette"></i> Game Design
+              </div>
+              <div class="skill-tag"><i class="bx bx-face"></i> Rive</div>
+              <div class="skill-tag">
+                <i class="bx bx-layer"></i> Figma UI/UX
+              </div>
+              <div class="skill-tag">
+                <i class="bx bxl-html5"></i> HTML & CSS
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== EDUCATION =====-->
+      <section class="education section">
+        <span class="section-subtitle">Qualification</span>
+        <h2 class="section-title">My Education</h2>
+
+        <div class="education__container bd-grid">
+          <div class="education__content">
+            <div>
+              <h3 class="education__year">08.2023 - Present</h3>
+              <span class="education__university"
+                >Saxion University of Applied Sciences</span
+              >
+            </div>
+
+            <div class="education__time">
+              <span class="education__rounder"></span>
+              <span class="education__line"></span>
+            </div>
+
+            <div>
+              <h3 class="education__race">
+                Creative Media and Game Technologies
+              </h3>
+              <span class="education__specialty"
+                >Game Design & UI/UX focus — Relevant Modules: Game Development,
+                Immersive Storytelling, Advanced Web, UI/UX Advanced</span
+              >
+            </div>
+          </div>
+          <div class="education__content">
+            <div>
+              <h3 class="education__year">08.2017 - 12.2018</h3>
+              <span class="education__university"
+                >University of Southern California</span
+              >
+            </div>
+
+            <div class="education__time">
+              <span class="education__rounder"></span>
+              <span class="education__line"></span>
+            </div>
+
+            <div>
+              <h3 class="education__race">BSc Computer Science</h3>
+              <span class="education__specialty"
+                >Key Coursework: Intro to Programming, Data Structures,
+                Calculus, Economics, Psychology</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== WORKS =====-->
+      <section class="works section" id="works">
+        <span class="section-subtitle">My Portfolio</span>
+        <h2 class="section-title">Recent Works</h2>
+
+        <div class="works__container bd-grid">
+          <!-- Mascot Project -->
+          <div class="works__img" data-modal-target="#MascotAnimation">
+            <img
+              src="assets/img/mascot_preview.png"
+              alt="Mascot Vector Animation"
+            />
+            <div class="works__data">
+              <span class="works__title">Mascot Vector Animation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for Mascot Animation -->
+        <div class="modal" id="MascotAnimation">
+          <div class="modal-header">
+            <div class="title">Mascot Vector Animation</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h3>Project Overview</h3>
+            <p>
+              Designed, rigged, and animated a mascot character in Rive to
+              represent my personal brand. The goal was to create a fun,
+              approachable, and professional character that communicates my
+              creative style while being technically reusable for my portfolio
+              website.
+            </p>
+
+            <h3>My Role</h3>
+            <p>
+              Solo Designer & Animator (Concept, Rigging, Animation, Branding)
+            </p>
+
+            <h3>Technologies Used</h3>
+            <ul>
+              <li>Rive (Rigging & Animation)</li>
+              <li>Figma (Design & Iterations)</li>
+              <li>Vector Illustration</li>
+            </ul>
+
+            <h3>Key Features</h3>
+            <ul>
+              <li>
+                Round, friendly mascot designed through silhouette and color
+                exploration
+              </li>
+              <li>Rigged with a clean bone hierarchy for smooth movement</li>
+              <li>
+                3 interactive animations (idle belly tap, greeting wave,
+                dance/jig)
+              </li>
+              <li>
+                State machine setup for event-based triggers (on_hover,
+                on_click)
+              </li>
+            </ul>
+
+            <h3>Learning Highlights</h3>
+            <p>
+              This project challenged me to combine branding, character design,
+              and technical rigging. I gained hands-on experience with Rive’s
+              animation workflow, including bone weighting, constraints, and
+              state machines.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--
+      <section class="works section" id="works">
+        <span class="section-subtitle">My Portfolio</span>
+        <h2 class="section-title">Recent Works</h2>
+
+        <div class="works__container bd-grid">
+          <div class="works__img" data-modal-target="#Dusseldorp">
+            <img
+              src="assets/img/work13.jpg"
+              alt="Dusseldorp Visualization Platform - Recreate"
+            />
+
+            <div class="works__data">
+              <span class="works__title">Project Alpha</span>
+            </div>
+          </div>
+
+          <div class="works__img" data-modal-target="#FragileJourney">
+            <img
+              src="assets/img/work10.jpg"
+              alt="The Fragile Journey - Global Game Jam 2025"
+            />
+
+            <div class="works__data">
+              <span class="works__title">Project Epsilon</span>
+            </div>
+          </div>
+
+          <div class="works__img" data-modal-target="#ThreeDXPlatform">
+            <img src="assets/img/work12.jpg" alt="3DX Platform - Recreate" />
+
+            <div class="works__data">
+              <span class="works__title">Project Zeta</span>
+            </div>
+          </div>
+
+          <div class="works__img" data-modal-target="#PuzzleBugs">
+            <img src="assets/img/work11.jpg" alt="Puzzle Bugs - XP Game Jam" />
+
+            <div class="works__data">
+              <span class="works__title">Project Delta</span>
+            </div>
+          </div>
+
+          <div class="works__img" data-modal-target="#Graduation">
+            <img src="assets/img/work7.jpg" alt="Graduation project" />
+
+            <div class="works__data">
+              <span class="works__title">Graduation</span>
+            </div>
+          </div>
+
+          <div class="works__img" data-modal-target="#Thales">
+            <img src="assets/img/work8.jpg" alt="Thales project" />
+
+            <div class="works__data">
+              <span class="works__title">Project Beta</span>
+            </div>
+          </div>
+
+          <div class="works__img" data-modal-target="#MetEm">
+            <img src="assets/img/work9.jpg" alt="Met'Em project" />
+
+            <div class="works__data">
+              <span class="works__title">Project Gamma</span>
+            </div>
+          </div>
+
+          <div class="works__img" data-modal-target="#ChinaMinor">
+            <img src="assets/img/work1.jpg" alt="China Minor project" />
+
+            <div class="works__data">
+              <span class="works__title">China Minor</span>
+            </div>
+          </div>
+
+          <div class="works__img" data-modal-target="#MobileGame">
+            <img src="assets/img/work2.jpg" alt="Mobile Game project" />
+
+            <div class="works__data">
+              <span class="works__title">My Own Mobile Game</span>
+            </div>
+          </div>
+
+          <div class="works__img" data-modal-target="#Propel">
+            <img src="assets/img/work4.jpg" alt="Talespin Propel project" />
+            <div class="works__data">
+              <span class="works__title">Talespin Propel</span>
+            </div>
+          </div>
+
+          <div class="works__img" data-modal-target="#LTU">
+            <img src="assets/img/work6.jpg" alt="Talespin LTU project" />
+            <div class="works__data">
+              <span class="works__title">Talespin LTU</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal" id="Graduation">
+          <div class="modal-header">
+            <div class="title">Project Placeholder — Education Highlight</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h3>Overview</h3>
+            <p>Brief description of the project or milestone goes here.</p>
+            <h3>Highlights</h3>
+            <ul>
+              <li>Key point one</li>
+              <li>Key point two</li>
+              <li>Key point three</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal" id="Thales">
+          <div class="modal-header">
+            <div class="title">Project Placeholder — Video Showcase</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <video width="90%" controls>
+              <source src="" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <h3>Overview</h3>
+            <p>Short summary of the project's goals and context.</p>
+            <h3>Role</h3>
+            <p>Role/title on the project.</p>
+            <h3>Technologies</h3>
+            <ul>
+              <li>Tech 1</li>
+              <li>Tech 2</li>
+              <li>Tech 3</li>
+            </ul>
+            <h3>Highlights</h3>
+            <ul>
+              <li>Contribution or result 1</li>
+              <li>Contribution or result 2</li>
+              <li>Contribution or result 3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal" id="MetEm">
+          <div class="modal-header">
+            <div class="title">Project Placeholder — GIF/Inline Media</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img
+              style="
+                width: 40%;
+                margin-bottom: 1%;
+                margin-left: auto;
+                margin-right: auto;
+              "
+              src=""
+              alt="Inline media preview"
+            />
+
+            <h3>Overview</h3>
+            <p>Short description of the project and media shown above.</p>
+            <h3>Role</h3>
+            <p>Role/title on the project.</p>
+            <h3>Technologies</h3>
+            <ul>
+              <li>Tech 1</li>
+              <li>Tech 2</li>
+              <li>Tech 3</li>
+            </ul>
+            <h3>Highlights</h3>
+            <ul>
+              <li>Highlight 1</li>
+              <li>Highlight 2</li>
+              <li>Highlight 3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal" id="PuzzleBugs">
+          <div class="modal-header">
+            <div class="title">Project Placeholder — Image Grid</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="game-showcase">
+              <div class="game-images">
+                <div class="game-image-grid">
+                  <div class="game-image-container">
+                    <img src="" alt="Image 1" class="gameplay-image" />
+                    <div class="image-caption">Caption for image 1</div>
+                  </div>
+                  <div class="game-image-container">
+                    <img src="" alt="Image 2" class="gameplay-image" />
+                    <div class="image-caption">Caption for image 2</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3>Overview</h3>
+            <p>Short description of the project and images shown above.</p>
+            <h3>Highlights</h3>
+            <ul>
+              <li>Point 1</li>
+              <li>Point 2</li>
+              <li>Point 3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal" id="FragileJourney">
+          <div class="modal-header">
+            <div class="title">The Fragile Journey - Global Game Jam 2025</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="game-showcase">
+              <div class="game-images">
+                <div class="game-image-grid">
+                  <div class="game-image-container">
+                    <img
+                      src="assets/img/BubblePLayTest.png"
+                      alt="The Fragile Journey gameplay"
+                      class="gameplay-image"
+                    />
+                    <div class="image-caption">
+                      Gameplay showcasing the bubble-themed game
+                    </div>
+                  </div>
+                  <div class="game-image-container">
+                    <img
+                      src="assets/img/BubbleWin.png"
+                      alt="The Fragile Journey award ceremony"
+                      class="gameplay-image"
+                    />
+                    <div class="image-caption">
+                      Our team receiving awards at the XP Global Game Jam 2025
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3>Project Overview</h3>
+            <p>
+              "The Fragile Journey" is a puzzle game created during the 48-hour
+              Global Game Jam 2025. Players guide the "Bubble Prince" home by
+              utilizing the unique abilities of three bubble-themed teammates to
+              solve puzzles. As the lead developer, I designed the core
+              mechanics, implemented the gameplay systems, and oversaw the
+              overall gameplay flow.
+            </p>
+
+            <h3>Team</h3>
+            <ul>
+              <li><strong>Developer:</strong> Iain Harrison (me)</li>
+              <li>
+                <strong>Artists:</strong>
+                <a href="https://www.linkedin.com/in/lena-van/" target="_blank"
+                  >Lena Van <i class="bx bxl-linkedin-square"></i
+                ></a>
+                &
+                <a
+                  href="https://www.linkedin.com/in/nigel-macugay/"
+                  target="_blank"
+                  >Nigel Macugay <i class="bx bxl-linkedin-square"></i
+                ></a>
+              </li>
+            </ul>
+
+            <h3>Gameplay Mechanics</h3>
+            <ul>
+              <li>
+                Control the Bubble Prince and three unique comrades, each with
+                distinct abilities
+              </li>
+              <li>
+                Switch between characters to solve cooperative puzzles and
+                progress through levels
+              </li>
+              <li>
+                Simple yet elegant mechanics that earned the Best Mechanic
+                recognition
+              </li>
+            </ul>
+
+            <h3>Technical Details</h3>
+            <ul>
+              <li>
+                Built with Unity and exported to WebGL/HTML5 for browser-based
+                play
+              </li>
+              <li>No downloads needed - lightweight yet polished experience</li>
+              <li>Genre: Puzzle, Single-player</li>
+              <li>Tags: Bubble, No AI, Short, Singleplayer, Unity</li>
+            </ul>
+
+            <h3>Awards & Recognition</h3>
+            <ul>
+              <li>
+                Winner of <strong>Best Game</strong> at the regional Global Game
+                Jam 2025
+              </li>
+              <li>
+                Winner of <strong>Best Mechanic</strong> at the regional Global
+                Game Jam 2025
+              </li>
+              <li>Perfect 5.0 rating from 3 player reviews</li>
+            </ul>
+
+            <h3>Development Insights</h3>
+            <p>
+              Creating "The Fragile Journey" in just 48 hours (with sleep!) was
+              an intense but rewarding experience. The tight deadline forced us
+              to focus on core mechanics and gameplay feel rather than
+              unnecessary features. Our team collaborated effectively, with
+              real-time coordination and decision-making under pressure.
+            </p>
+
+            <h3>Reflections & Future Improvements</h3>
+            <p>
+              What went well: The character-switching mechanic proved to be both
+              intuitive and engaging, allowing for creative puzzle design within
+              our limited timeframe. The simple art style complemented the
+              gameplay perfectly.
+            </p>
+            <p>
+              What I learned: Rapid prototyping and prioritization are crucial
+              skills in game jams. Starting with a solid core mechanic and
+              building outward was key to our success.
+            </p>
+            <p>
+              Future improvements: With more time, I'd expand the game with
+              additional levels, more complex puzzle interactions between
+              characters, and perhaps a narrative element to enhance player
+              engagement.
+            </p>
+          </div>
+          <a
+            href="https://iainharrison.itch.io/the-fragile-journey"
+            class="works__link__open"
+            target="_blank"
+            ><i class="bx bx-game"></i> Play on itch.io</a
+          >
+        </div>
+
+        <div class="modal" id="Dusseldorp">
+          <div class="modal-header">
+            <div class="title">
+              Dusseldorp Visualization Platform - Recreate
+            </div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="game-showcase">
+              <div class="game-images">
+                <div class="game-image-grid">
+                  <div class="game-image-container">
+                    <img
+                      src="assets/img/dusseldorp1.jpg"
+                      alt="Dusseldorp Visualization Platform - Street Render"
+                      class="gameplay-image"
+                    />
+                    <div class="image-caption">
+                      Street visualization in Three.js viewer
+                    </div>
+                  </div>
+                  <div class="game-image-container">
+                    <img
+                      src="assets/img/dusseldorp2.jpg"
+                      alt="Dusseldorp Visualization Platform - Building Render"
+                      class="gameplay-image"
+                    />
+                    <div class="image-caption">
+                      Building visualization in Three.js viewer
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3>Project Overview</h3>
+            <p>
+              The Dusseldorp Project is a large-scale Unity-based platform
+              designed to visualize major infrastructure projects — such as new
+              buildings, parking structures, and park renovations — within
+              360-degree photographic environments.
+            </p>
+            <p>
+              The application was developed to work seamlessly across desktop
+              and VR, allowing users to navigate, edit, and present proposed
+              environments in fully immersive 3D spaces.
+            </p>
+            <p>
+              This was one of Recreate's most ambitious and technically involved
+              projects, and I contributed from day one—helping design and
+              implement the core systems that powered its functionality. Though
+              it was my final project at Recreate, it was also my most
+              educational and transformative experience.
+            </p>
+
+            <h3>Company & Role</h3>
+            <ul>
+              <li><strong>Company:</strong> Recreate (Rijssen, Netherlands)</li>
+              <li><strong>Role:</strong> Unity Developer</li>
+            </ul>
+
+            <h3>Systems & Features</h3>
+            <ul>
+              <li>
+                <strong>System Architecture:</strong> Helped define and
+                implement the app's multi-tab interface and modular tool systems
+              </li>
+              <li>
+                <strong>VR Functionality:</strong> Enabled full application use
+                in virtual reality, including flythrough navigation, object
+                placement/editing, and scene masking
+              </li>
+              <li>
+                <strong>CycloMedia Integration:</strong> Anchored 3D model
+                positions to real-world 360° photography, ensuring geographic
+                and visual alignment
+              </li>
+              <li>
+                <strong>Multi-Tab Feature Set:</strong>
+                <ul>
+                  <li>
+                    Authentication Tab: Login, user roles, and access handling
+                  </li>
+                  <li>
+                    Library Manager: Asset uploading, scale configuration, and
+                    metadata tools
+                  </li>
+                  <li>
+                    Editor Tab: 3D sandbox for environment creation (e.g.,
+                    placing benches, signs, structures)
+                  </li>
+                  <li>
+                    Canvas Tab: Perspective-based masking of objects for 360°
+                    photo integration
+                  </li>
+                  <li>
+                    Video Tab: Created media tools for generating promotional
+                    videos
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Web Integration:</strong> Developed a pipeline to export
+                finished scenes to a Three.js-powered website for public access
+                and stakeholder preview
+              </li>
+            </ul>
+
+            <h3>Technical Highlights</h3>
+            <ul>
+              <li>Unity Engine with XR support (VR desktop headsets)</li>
+              <li>
+                CycloMedia API: Mapped 360° photo locations to scene space
+              </li>
+              <li>
+                3D Object Placement: Anchored world elements precisely based on
+                photo data
+              </li>
+              <li>
+                Three.js Export Pipeline: Web-friendly renderings for easy
+                stakeholder access
+              </li>
+              <li>
+                XR Controls: Designed intuitive motion and interaction tools for
+                both desktop and VR users
+              </li>
+            </ul>
+
+            <h3>Leadership & Team Collaboration</h3>
+            <ul>
+              <li>
+                Actively involved in early project scoping, tech planning, and
+                milestone delivery
+              </li>
+              <li>
+                Took on greater technical leadership responsibilities in my
+                final year at Recreate
+              </li>
+              <li>
+                Collaborated with backend developers, 3D artists, and business
+                stakeholders
+              </li>
+              <li>
+                Mentored junior developers and ensured clean code structure and
+                documentation practices
+              </li>
+            </ul>
+
+            <h3>Skills & Growth</h3>
+            <ul>
+              <li>Advanced Unity UI + VR system design</li>
+              <li>
+                Integration of real-world spatial photography into interactive
+                3D environments
+              </li>
+              <li>
+                Developed new muscle in project planning, system architecture,
+                and long-term team communication
+              </li>
+              <li>
+                Balanced feature-rich design with performance optimization for
+                VR environments
+              </li>
+            </ul>
+
+            <h3>Outcome</h3>
+            <p>The final product empowered clients to:</p>
+            <ul>
+              <li>
+                Create immersive 360° mockups of future construction projects
+              </li>
+              <li>
+                Explore these mockups in real time using both VR and desktop
+                interfaces
+              </li>
+              <li>
+                Export visualizations to a Three.js web platform for broader
+                visibility and communication with stakeholders
+              </li>
+            </ul>
+
+            <h3>Professional Impact</h3>
+            <p>
+              The Dusseldorp Project represents a milestone in my professional
+              growth—where I combined my Unity expertise, VR design skills, and
+              project leadership into a real-world application built for
+              meaningful public impact.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal" id="ThreeDXPlatform">
+          <div class="modal-header">
+            <div class="title">3DX Platform - Recreate</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="game-showcase">
+              <div class="game-images">
+                <div class="game-image-grid">
+                  <div class="game-image-container">
+                    <img
+                      src="assets/img/3dxApplication.jpg"
+                      alt="3DX Platform Application View"
+                      class="gameplay-image"
+                    />
+                    <div class="image-caption">
+                      3DX Platform application interface
+                    </div>
+                  </div>
+                  <div class="game-image-container">
+                    <img
+                      src="assets/img/3dxPromo.jpg"
+                      alt="3DX Platform Promotional Demo"
+                      class="gameplay-image"
+                    />
+                    <div class="image-caption">
+                      3DX Platform promotional demo
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3>Project Overview</h3>
+            <p>
+              The 3DX Platform is a powerful desktop and mobile ecosystem built
+              to visualize and animate 3D CAD models in real time for a variety
+              of business clients. It includes a Unity-based editor for desktop
+              environments and a companion mobile AR app for real-world
+              visualization.
+            </p>
+            <p>
+              This was Recreate's largest product, and I joined the team during
+              its development—offering me a deep dive into professional Unity
+              workflows, XR integration, and agile collaboration on a
+              large-scale B2B product.
+            </p>
+
+            <h3>Company & Role</h3>
+            <ul>
+              <li><strong>Company:</strong> Recreate (Rijssen, Netherlands)</li>
+              <li><strong>Role:</strong> Unity Developer</li>
+              <li>
+                <strong>Team Size:</strong> Medium, cross-functional with
+                dedicated engineering leads and backend support
+              </li>
+            </ul>
+
+            <h3>Key Responsibilities</h3>
+            <ul>
+              <li>
+                <strong>UI/UX Development:</strong> Built highly performant,
+                intuitive UI with Unity's built-in UI tools, focusing on
+                scalable layouts and responsive interactions
+              </li>
+              <li>
+                <strong>Backend Communication:</strong> Integrated Unity
+                front-end logic with backend systems via REST APIs, in
+                coordination with backend engineers
+              </li>
+              <li>
+                <strong>XR Development:</strong> Worked on AR and mixed reality
+                features to display CAD models in real-world spaces via mobile
+              </li>
+              <li>
+                <strong>Version Control & Collaboration:</strong> Used
+                Git/Bitbucket for code management; actively participated in pull
+                requests and code reviews
+              </li>
+              <li>
+                <strong>Agile Practices:</strong> Participated in daily
+                standups, sprint planning, and retrospectives using Jira within
+                a SCRUM framework
+              </li>
+              <li>
+                <strong>Client-Facing Work:</strong> Occasionally involved in
+                meetings for scoping and client alignment
+              </li>
+            </ul>
+
+            <h3>Skills & Growth</h3>
+            <ul>
+              <li>
+                <strong>Unity UI Optimization:</strong> Gained deep practical
+                experience building flexible, scalable UIs in Unity for real
+                business use cases
+              </li>
+              <li>
+                <strong>Backend Integration:</strong> Strengthened knowledge of
+                Unity-to-server communication pipelines
+              </li>
+              <li>
+                <strong>Mixed Reality Development:</strong> Worked across AR and
+                MR applications to align 3D content with real-world spaces
+              </li>
+              <li>
+                <strong>Mentorship:</strong> Working under Recreate's lead
+                engineer,
+                <a
+                  href="https://www.linkedin.com/in/annelien-van-der-es/"
+                  target="_blank"
+                  >Annelien <i class="bx bxl-linkedin-square"></i></a
+                >, helped accelerate my understanding of high-level Unity design
+                patterns, optimization, and technical rigor
+              </li>
+            </ul>
+
+            <h3>Professional Development</h3>
+            <p>
+              This was a formative professional project that sharpened my Unity
+              development, problem-solving, and team collaboration skills. I
+              experienced what it's like to contribute meaningfully to a
+              large-scale, production-ready XR application from the ground up.
+            </p>
+            <p>
+              It taught me to balance performance, usability, and visual
+              clarity—especially when working with complex CAD data in both
+              desktop and mobile contexts.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal" id="LTU">
+          <div class="modal-header">
+            <div class="title">Talespin: Leading Through Uncertainty</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h3>Project Overview</h3>
+            <p>
+              'Leading through Uncertainty' was developed at Talespin in
+              response to the COVID-19 pandemic's unprecedented impact on
+              workplace leadership. This VR-based training program was designed
+              to help business leaders navigate crisis situations by developing
+              critical soft skills through immersive simulation experiences.
+            </p>
+
+            <h3>My Role</h3>
+            <p>VR Development Intern & Quality Assurance Specialist</p>
+
+            <h3>Technologies Used</h3>
+            <ul>
+              <li>Unity Game Engine</li>
+              <li>C# Programming</li>
+              <li>VR Development (Oculus/Meta SDK)</li>
+              <li>Version Control Systems</li>
+              <li>Bug Tracking & Documentation Tools</li>
+            </ul>
+
+            <h3>Key Contributions</h3>
+            <p>
+              I joined Talespin during the final stages of this project,
+              allowing me to focus on:
+            </p>
+            <ul>
+              <li>
+                Identifying and resolving critical bugs and performance issues
+              </li>
+              <li>Optimizing VR interactions for intuitive user experience</li>
+              <li>
+                Collaborating with the QA team on comprehensive testing
+                protocols
+              </li>
+              <li>Documenting best practices for future project maintenance</li>
+              <li>Supporting the final polish phase before client delivery</li>
+            </ul>
+
+            <h3>Learning Outcomes</h3>
+            <p>This project provided valuable insights into:</p>
+            <ul>
+              <li>
+                Professional VR development workflows in a corporate environment
+              </li>
+              <li>Effective project finalization and delivery processes</li>
+              <li>Quality assurance methodologies for immersive experiences</li>
+              <li>
+                How VR can effectively simulate complex interpersonal scenarios
+              </li>
+              <li>
+                The importance of user feedback in refining training simulations
+              </li>
+            </ul>
+
+            <h3>Project Impact</h3>
+            <p>
+              As part of Talespin's CoPilot platform, 'Leading through
+              Uncertainty' has helped numerous business leaders develop crucial
+              crisis management skills through immersive VR training,
+              demonstrating the practical application of virtual reality
+              technology for professional development in challenging times.
+            </p>
+          </div>
+          <a
+            href="https://www.talespin.com/leading-through-uncertainty"
+            class="works__link__open"
+            target="_blank"
+            ><i class="bx bx-link-alt"></i
+          ></a>
+        </div>
+
+        <div class="modal" id="Propel">
+          <div class="modal-header">
+            <div class="title">Talespin Propel - VR Skills Training</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h3>Project Overview</h3>
+            <p>
+              While working at Talespin, I had the opportunity to be part of the
+              engineering team for Project Propel, a VR-based training platform
+              focused on teaching practical hard skills. Unlike Talespin's
+              CoPilot project which focused on soft skills training, Propel was
+              designed to teach technical skills such as using specialized tools
+              and equipment.
+            </p>
+
+            <h3>My Role</h3>
+            <p>VR Interaction Engineer & Feature Developer</p>
+
+            <h3>Technologies Used</h3>
+            <ul>
+              <li>Unity Game Engine</li>
+              <li>C# Programming</li>
+              <li>VR Development (Oculus/Meta SDK)</li>
+              <li>3D Interaction Design</li>
+              <li>Physics-Based Tool Simulation</li>
+            </ul>
+
+            <h3>Key Contributions</h3>
+            <p>
+              I was involved from the project's inception through to its first
+              alpha release, contributing to:
+            </p>
+            <ul>
+              <li>
+                Designing and implementing a dynamic interactable wristwatch UI
+                that could be physically tapped in VR to pause the experience
+              </li>
+              <li>
+                Creating realistic physics-based interactions for various tools
+                used in training scenarios
+              </li>
+              <li>
+                Developing and polishing the virtual tools used by players
+                during training
+              </li>
+              <li>
+                Implementing feedback systems to guide users through complex
+                technical procedures
+              </li>
+              <li>
+                Collaborating with instructional designers to ensure training
+                accuracy
+              </li>
+            </ul>
+
+            <h3>Challenges & Solutions</h3>
+            <p>
+              A significant challenge was creating intuitive VR interactions for
+              technical tools that accurately simulated their real-world
+              counterparts while remaining user-friendly. I addressed this by
+              implementing a hybrid approach that combined realistic physics
+              with subtle guidance systems and haptic feedback to help users
+              understand proper tool usage.
+            </p>
+
+            <h3>Outcomes</h3>
+            <ul>
+              <li>
+                Successfully delivered the first alpha version of the Propel
+                platform
+              </li>
+              <li>
+                Created reusable interaction frameworks that accelerated
+                development of new training modules
+              </li>
+              <li>
+                Established best practices for technical skill simulation in VR
+              </li>
+              <li>
+                Contributed to a platform that effectively teaches practical
+                skills in an immersive environment
+              </li>
+            </ul>
+          </div>
+          <a
+            href="https://www.talespin.com/propel"
+            class="works__link__open"
+            target="_blank"
+            ><i class="bx bx-link-alt"></i
+          ></a>
+        </div>
+
+        <div class="modal" id="MobileGame">
+          <div class="modal-header">
+            <div class="title">Cat Collection Mobile Game</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img
+              style="
+                width: 40%;
+                margin-bottom: 1%;
+                margin-left: auto;
+                margin-right: auto;
+              "
+              src="assets/vid/CatLookAt.gif"
+              alt="Cat character animation from mobile game"
+            />
+
+            <h3>Project Overview</h3>
+            <p>
+              This is a personal passion project I've been developing alongside
+              my university studies since 2020. Inspired by popular games like
+              KleptoCats and Neko Atsume, I created a mobile game about
+              collecting and caring for a variety of unique cats that visit the
+              player's customizable house.
+            </p>
+
+            <h3>My Role</h3>
+            <p>Solo Developer (Programming, Art, Design, Marketing)</p>
+
+            <h3>Technologies Used</h3>
+            <ul>
+              <li>Unity Game Engine</li>
+              <li>C# Programming</li>
+              <li>Live2D Animation System</li>
+              <li>AdMob & Unity Ads Integration</li>
+              <li>Localization Systems</li>
+              <li>Mobile UI/UX Design</li>
+            </ul>
+
+            <h3>Key Features</h3>
+            <ul>
+              <li>
+                Collection-based gameplay with dozens of unique cat characters
+              </li>
+              <li>
+                House customization with unlockable furniture and decorations
+              </li>
+              <li>
+                Stat-based progression system that influences cat visitation
+              </li>
+              <li>Dynamic 2D animations using Live2D technology</li>
+              <li>Multi-language support for international release</li>
+              <li>
+                Monetization through strategic ad placement and optional
+                purchases
+              </li>
+            </ul>
+
+            <h3>Challenges & Solutions</h3>
+            <p>
+              The biggest challenge was balancing the scope of the project as a
+              solo developer while maintaining high-quality standards. I
+              addressed this by implementing an iterative development approach,
+              focusing on core gameplay mechanics first, then gradually
+              expanding features while documenting the process on YouTube to
+              maintain accountability and gather community feedback.
+            </p>
+
+            <h3>Outcomes</h3>
+            <ul>
+              <li>
+                Developed a complete game from concept to near-release state
+              </li>
+              <li>
+                Gained comprehensive experience in all aspects of mobile game
+                development
+              </li>
+              <li>
+                Built a YouTube following documenting the development process
+              </li>
+              <li>
+                Mastered Live2D animation techniques for dynamic character
+                presentation
+              </li>
+              <li>
+                Developed effective monetization strategies for free-to-play
+                mobile games
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal" id="ChinaMinor">
+          <div class="modal-header">
+            <div class="title">Doing Business With China Minor</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h3>Program Overview</h3>
+            <p>
+              During the 3rd year of my university course, I completed a
+              specialized minor called "Doing Business with China." This program
+              was strategically chosen to support my goal of releasing my mobile
+              game in the Chinese market, which represents one of the largest
+              and most unique gaming markets globally.
+            </p>
+
+            <h3>Key Areas of Study</h3>
+            <ul>
+              <li>Chinese Business Practices & Etiquette</li>
+              <li>Chinese History & Cultural Context</li>
+              <li>Mandarin Language Fundamentals</li>
+              <li>Intercultural Management & Communication</li>
+              <li>Chinese Market Entry Strategies</li>
+              <li>Regulatory Environment for Digital Products in China</li>
+            </ul>
+
+            <h3>Skills Developed</h3>
+            <ul>
+              <li>Cross-cultural communication and negotiation</li>
+              <li>Cultural empathy and adaptability</li>
+              <li>International business strategy</li>
+              <li>Market analysis for Eastern markets</li>
+              <li>Basic Mandarin language proficiency</li>
+            </ul>
+
+            <h3>Application to Game Development</h3>
+            <p>
+              This minor provided invaluable insights for developing games with
+              global appeal, particularly for Eastern markets. I gained
+              understanding of:
+            </p>
+            <ul>
+              <li>Cultural preferences in game aesthetics and mechanics</li>
+              <li>Localization considerations beyond simple translation</li>
+              <li>Regulatory requirements for publishing games in China</li>
+              <li>Monetization strategies effective in the Chinese market</li>
+            </ul>
+
+            <h3>Personal Impact</h3>
+            <p>
+              Having moved from England to the Netherlands, I've always
+              appreciated cultural diversity. This program deepened my ability
+              to empathize with cultural differences in professional settings.
+              The most valuable lesson was understanding that effective
+              international collaboration requires not just awareness of
+              differences, but genuine appreciation for the unique perspectives
+              and approaches that diverse cultures bring to creative and
+              technical work.
+            </p>
+          </div>
+        </div>
+      </section>
+      -->
+
+      <!--===== TECHNICAL SKILLS SHOWCASE =====-->
+      <!--
+      <section class="skills-showcase section" id="skills-showcase">
+        <span class="section-subtitle">Software Development</span>
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="skills-showcase__container bd-grid">
+          ... commented out temporarily ...
+        </div>
+      </section>
+      -->
+
+      <!--===== PROJECT IN MIND =====-->
+      <section class="project section">
+        <div class="project__container bd-grid">
+          <div class="project__data">
+            <h2 class="section-title project__title">
+              Do you have a project in mind
+            </h2>
+            <p class="project__description">
+              If you have a project you would like realised do not hesitate to
+              get in touch for a chat about how I can help, contact me directly
+              here.
+            </p>
+            <a href="#contact" class="button button__light">Contact Me</a>
+          </div>
+
+          <!-- <img src="assets/img/projectmind.png" alt="" class="project__img" /> -->
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <span class="section-subtitle">Contact Me</span>
+        <h2 class="section-title">Get In Touch</h2>
+
+        <div class="contact__container bd-grid">
+          <!--
+                    <form action="https://formspree.io/f/mnqolwrd" method="post" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" name="Name"  placeholder="Name" class="contact__input">
+                            <input type="email" name="Email" placeholder="Email" class="contact__input">
+                        </div>
+
+                        <input type="text" name="Project" placeholder="Subject" class="contact__input">
+
+                        <textarea name="Message" id="" cols="0"  placeholder="Message"  rows="10" class="contact__input"></textarea>
+
+                        <input type="submit" value="Send Message"class="button contact__button">
+                    </form>
+                    -->
+          <div>
+            <div class="contact__info">
+              <h3 class="contact__subtitle">Call me</h3>
+              <span class="contact__text">+31 6 39765184</span>
+            </div>
+
+            <div class="contact__info">
+              <h3 class="contact__subtitle">E-mail</h3>
+              <span class="contact__text">oboumelhem@gmail.com</span>
+              <span class="contact__text"></span>
+            </div>
+
+            <div class="contact__info">
+              <h3 class="contact__subtitle">Location</h3>
+              <span class="contact__text"></span>
+              <span class="contact__text">Enschede - Netherlands </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="overlay"></div>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer section">
+      <div class="footer__container bd-grid">
+        <h1 class="footer__title">Osama Boumelhem</h1>
+        <p class="footer__description">
+          I am Osama Boumelhem and this is my personal website, consult me here.
+        </p>
+
+        <div class="footer__social">
+          <a href="#" class="footer__link"><i class="bx bxl-github"></i></a>
+          <a
+            href="https://www.linkedin.com/in/osama-boumelhem-442846257/"
+            class="footer__link"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="#" class="footer__link"><i class="bx bx-dock-top"></i></a>
+        </div>
+        <p class="footer__copy"></p>
       </div>
-      <p class="footer__copy">© <span id="year">2025</span></p>
-    </div>
-  </footer>
-</body>
+    </footer>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
