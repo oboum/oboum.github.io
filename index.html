@@ -96,17 +96,36 @@
         <span class="section-subtitle">My Intro</span>
         <h2 class="section-title">About Me</h2>
 
-        <div class="about__container bd-grid">
+        <div class="about__container bd-grid about__container--swap">
           <div class="about__data">
             <p class="about__description">
               Hi, I'm a game designer, passionate about creating and developing
               games. I am very self-motivated and always striving to improve and
               learn new things.
             </p>
-
+            <div class="about__information">
+              <h3 class="about__information-title">Information</h3>
+              <div class="about__information-data">
+                <i class="bx bx-user about__information-icon"></i>
+                <span>Osama Boumelhem</span>
+              </div>
+              <div class="about__information-data">
+                <i class="bx bx-phone about__information-icon"></i>
+                <span>+31 6 39765184</span>
+              </div>
+              <div class="about__information-data">
+                <i class="bx bx-envelope about__information-icon"></i>
+                <span>oboumelhem@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="about__demo">
+            <p class="about__squaresquare-highlight" style="margin-bottom: 1.5rem; font-weight: 500; color: var(--first-color-dark); text-align:right;">
+              Try out SquareSquare, a 2D puzzle game I created
+            </p>
             <section class="game">
               <div class="game-container">
-                <h3 class="game-title">Interactive Portfolio Demo</h3>
+                <h3 class="game-title">Interactive Puzzle Game Demo</h3>
                 <canvas id="unity-canvas"></canvas>
                 <div class="game-controls">
                   <div
@@ -146,28 +165,7 @@
                 });
               </script>
             </section>
-            <!-- <img src="assets/img/about.png" alt="" class="about__img"> -->
           </div>
-
-          <div>
-            <div class="about__information">
-              <h3 class="about__information-title">Information</h3>
-
-              <div class="about__information-data">
-                <i class="bx bx-user about__information-icon"></i>
-                <span>Osama Boumelhem</span>
-              </div>
-
-              <div class="about__information-data">
-                <i class="bx bx-phone about__information-icon"></i>
-                <span>+31 6 39765184</span>
-              </div>
-
-              <div class="about__information-data">
-                <i class="bx bx-envelope about__information-icon"></i>
-                <span>oboumelhem@gmail.com</span>
-              </div>
-            </div>
 
             <!--
             <div class="about__information">
@@ -330,6 +328,16 @@
               <span class="works__title">Mascot Vector Animation</span>
             </div>
           </div>
+          <!-- SquareSquare Project -->
+          <div class="works__img works__img--squaresquare" data-modal-target="#SquareSquare">
+            <img
+              src="assets/img/gam-logo.png"
+              alt="SquareSquare 2D Puzzle Game"
+            />
+            <div class="works__data">
+              <span class="works__title">SquareSquare: 2D Puzzle Game</span>
+            </div>
+          </div>
         </div>
 
         <!-- Modal for Mascot Animation -->
@@ -383,6 +391,40 @@
               and technical rigging. I gained hands-on experience with Rive’s
               animation workflow, including bone weighting, constraints, and
               state machines.
+            </p>
+          </div>
+        </div>
+        <!-- Modal for SquareSquare -->
+        <div class="modal" id="SquareSquare">
+          <div class="modal-header">
+            <div class="title">SquareSquare: 2D Puzzle Game</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h3>Project Overview</h3>
+            <p>
+              Designed and developed a minimalist 2D puzzle game prototype in Unity. The goal was to explore puzzle design principles and game theory while keeping the scope small and mechanics engaging. The final build features sliding square mechanics, multiple puzzle levels, and functional UI, embedded directly into my portfolio website as a WebGL game.
+            </p>
+            <h3>My Role</h3>
+            <p>
+              Solo Game Designer & Developer (Concept, Puzzle Design, Level Design, UI/UX, Unity Implementation)
+            </p>
+            <h3>Technologies Used</h3>
+            <ul>
+              <li>Unity (2D Framework, Scripting, WebGL Build)</li>
+              <li>Figma (Logo & UI Elements)</li>
+              <li>AI Tools (ChatGPT, Claude, Cursor IDE for scripting support)</li>
+            </ul>
+            <h3>Key Features</h3>
+            <ul>
+              <li>Core mechanic: sliding colored squares that move simultaneously until blocked</li>
+              <li>Progressive levels introducing hazards, bouncy walls, and multiple goals</li>
+              <li>Functional menus with scene and level progression tracking</li>
+              <li>WebGL integration for direct in-browser play on portfolio site</li>
+            </ul>
+            <h3>Learning Highlights</h3>
+            <p>
+              This project taught me how to scope a puzzle game effectively, prioritize functionality over polish, and balance puzzle difficulty through iterative testing. I also gained experience managing technical debt in Unity projects while focusing on design outcomes.
             </p>
           </div>
         </div>
