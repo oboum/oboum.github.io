@@ -34,7 +34,7 @@
 
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link active">Home</a>
+              <a href="#home" class="nav__link nav-active">Home</a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">About</a>
@@ -44,9 +44,6 @@
             </li>
             <li class="nav__item">
               <a href="#works" class="nav__link">Works</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills-showcase" class="nav__link">Skills Showcase</a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">Contact me</a>
@@ -75,8 +72,9 @@
                 ><i class="bx bxl-linkedin"></i
               ></a>
               <a href="#" class="home__social-link"
-                ><i class="bx bxl-github"></i> </a
-              ><a href="#" class="home__social-link"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a href="#" class="home__social-link"
                 ><i class="bx bx-dock-top"></i
               ></a>
             </div>
@@ -119,90 +117,26 @@
               </div>
             </div>
           </div>
+
           <div class="about__demo">
-            <p class="about__squaresquare-highlight" style="margin-bottom: 1.5rem; font-weight: 500; color: var(--first-color-dark); text-align:right;">
-              Try out SquareSquare, a 2D puzzle game I created
-            </p>
-            <section class="game">
-              <div class="game-container">
-                <h3 class="game-title">Interactive Puzzle Game Demo</h3>
-                <canvas id="unity-canvas"></canvas>
-                <div class="game-controls">
-                  <div
-                    id="fullScreen"
-                    style="
-                      text-align: center;
-                      color: #486f9e;
-                      height: 20px;
-                      width: %UNITY_WIDTH%px;
-                      cursor: pointer;"
-                  >
-                    <span class="fullscreen-text"
-                      ><i class="bx bx-fullscreen"></i> Click here to play in
-                      fullscreen</span
-                    >
-                  </div>
+            <div class="about__current-project">
+              <h3 class="about__current-title">Currently Working On</h3>
+              <div class="about__current-card">
+                <div class="about__current-icon">
+                  <i class="bx bx-dice-5"></i>
                 </div>
-              </div>
-              <script src="assets/Build/Unity Builds.loader.js"></script>
-              <script>
-                var fullscreenButton = document.querySelector("#fullScreen");
-                createUnityInstance(document.querySelector("#unity-canvas"), {
-                  dataUrl: "assets/Build/Unity Builds.data",
-                  frameworkUrl: "assets/Build/Unity Builds.framework.js",
-                  codeUrl: "assets/Build/Unity Builds.wasm",
-                  streamingAssetsUrl: "assets/StreamingAssets",
-                  companyName: "DefaultCompany",
-                  productName: "AboutMe portfolio game",
-                  productVersion: "1.0",
-                  // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-                  // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-                }).then((unityInstance) => {
-                  fullscreenButton.onclick = () => {
-                    unityInstance.SetFullscreen(1);
-                  };
-                });
-              </script>
-            </section>
-          </div>
-
-            <!--
-            <div class="about__information">
-              <h3 class="about__information-title">Experience and support</h3>
-
-              <div class="about__information-data">
-                <i class="bx bx-medal about__information-icon"></i>
-                <div>
-                  <span class="about__information-subtitle"
-                    >3 years of paid employment</span
-                  >
-                  <span class="about__information-subtitle-small"
-                    >Experience</span
-                  >
-                </div>
-              </div>
-
-              <div class="about__information-data">
-                <i class="bx bx-briefcase-alt about__information-icon"></i>
-                <div>
-                  <span class="about__information-subtitle">75+ Projects</span>
-                  <span class="about__information-subtitle-small"
-                    >Completed</span
-                  >
-                </div>
-              </div>
-
-              <div class="about__information-data">
-                <i class="bx bx-support about__information-icon"></i>
-                <div>
-                  <span class="about__information-subtitle">Education</span>
-                  <span class="about__information-subtitle-small"
-                    >Saxion University of Applied Sciences</span
-                  >
+                <div class="about__current-content">
+                  <h4>Empyrean Arena</h4>
+                  <p>
+                    An ongoing TTRPG project — designing a unique arena combat
+                    system for 2–4 players that blends competitive fighting game
+                    mechanics with tabletop RPG depth. Active development as a
+                    Minor Skilled project.
+                  </p>
+                  <span class="about__current-tag">In Development</span>
                 </div>
               </div>
             </div>
-            -->
           </div>
         </div>
       </section>
@@ -228,11 +162,10 @@
                 <i class="bx bx-code-alt"></i> C# Programming
               </div>
               <div class="skill-tag">
-                <i class="bx bx-cog"></i> Tooling & Systems
+                <i class="bx bx-cog"></i> Tooling &amp; Systems
               </div>
-
               <div class="skill-tag">
-                <i class="bx bx-joystick"></i> Game Feel & Feedback
+                <i class="bx bx-joystick"></i> Game Feel &amp; Feedback
               </div>
             </div>
           </div>
@@ -241,7 +174,7 @@
             <h3 class="skills__subtitle">Additional Skills</h3>
             <div class="skills-list">
               <div class="skill-tag">
-                <i class="bx bx-user-voice"></i> Narrative design
+                <i class="bx bx-user-voice"></i> Narrative Design
               </div>
               <div class="skill-tag">
                 <i class="bx bx-palette"></i> Game Design
@@ -251,7 +184,7 @@
                 <i class="bx bx-layer"></i> Figma UI/UX
               </div>
               <div class="skill-tag">
-                <i class="bx bxl-html5"></i> HTML & CSS
+                <i class="bx bxl-html5"></i> HTML &amp; CSS
               </div>
             </div>
           </div>
@@ -282,11 +215,13 @@
                 Creative Media and Game Technologies
               </h3>
               <span class="education__specialty"
-                >Game Design & UI/UX focus — Relevant Modules: Game Development,
-                Immersive Storytelling, Advanced Web, UI/UX Advanced</span
+                >Game Design &amp; UI/UX focus — Relevant Modules: Game
+                Development, Immersive Storytelling, Advanced Web, UI/UX
+                Advanced</span
               >
             </div>
           </div>
+
           <div class="education__content">
             <div>
               <h3 class="education__year">08.2017 - 12.2018</h3>
@@ -316,45 +251,171 @@
         <span class="section-subtitle">My Portfolio</span>
         <h2 class="section-title">Recent Works</h2>
 
+        <!-- Filter tabs -->
+        <div class="works__filters">
+          <button class="works__filter-btn filter-active" data-filter="all">All</button>
+          <button class="works__filter-btn" data-filter="internship">Internship</button>
+          <button class="works__filter-btn" data-filter="uiux">UI/UX Projects</button>
+          <button class="works__filter-btn" data-filter="team">Team Projects</button>
+          <button class="works__filter-btn" data-filter="personal">Personal</button>
+        </div>
+
         <div class="works__container bd-grid">
-          <!-- Mascot Project -->
-          <div class="works__img" data-modal-target="#MascotAnimation">
-            <img
-              src="assets/img/mascot_preview.png"
-              alt="Mascot Vector Animation"
-            />
-            <div class="works__data">
-              <span class="works__title">Mascot Vector Animation</span>
+
+          <!-- 1. Tidalflow Internship -->
+          <div class="works__img" data-category="internship" data-modal-target="#Tidalflow">
+            <div class="works__thumb--placeholder">
+              <i class="bx bx-briefcase-alt-2"></i>
+              <span>Tidalflow Internship</span>
             </div>
-          </div>
-          <!-- SquareSquare Project -->
-          <div class="works__img works__img--squaresquare" data-modal-target="#SquareSquare">
-            <img
-              src="assets/img/gam-logo.png"
-              alt="SquareSquare 2D Puzzle Game"
-            />
+            <span class="works__category-badge">Internship</span>
             <div class="works__data">
-              <span class="works__title">SquareSquare: 2D Puzzle Game</span>
+              <span class="works__title">Tidalflow Internship</span>
             </div>
           </div>
 
-          <!-- map Project -->
-          <div class="works__img" data-modal-target="#Map">
-            <img
-              src="assets/img/works4.webp"
-              alt="Map" 
-            />
+          <!-- 2. Royal Racers -->
+          <div class="works__img" data-category="uiux" data-modal-target="#RoyalRacers">
+            <div class="works__thumb--placeholder">
+              <i class="bx bx-car"></i>
+              <span>Royal Racers</span>
+            </div>
+            <span class="works__category-badge">UI/UX Projects</span>
             <div class="works__data">
-              <span class="works__title">Worldbuilding: Vedalon</span>
+              <span class="works__title">Royal Racers</span>
             </div>
           </div>
 
-          <!-- world Project -->
-          <div class="works__img" data-modal-target="#TTRPG">
-            <img
-              src="assets/img/works3.jpg"
-              alt="TTRPG"
-            />
+          <!-- 3. Kaiju Battle -->
+          <div class="works__img" data-category="uiux" data-modal-target="#KaijuBattle">
+            <div class="works__thumb--placeholder">
+              <i class="bx bx-landscape"></i>
+              <span>Kaiju Battle</span>
+            </div>
+            <span class="works__category-badge">UI/UX Projects</span>
+            <div class="works__data">
+              <span class="works__title">Kaiju Battle</span>
+            </div>
+          </div>
+
+          <!-- 4. ASPCA Ethical Breeding -->
+          <div class="works__img" data-category="uiux" data-modal-target="#ASPCA">
+            <div class="works__thumb--placeholder">
+              <i class="bx bx-heart"></i>
+              <span>ASPCA Ethical Breeding</span>
+            </div>
+            <span class="works__category-badge">UI/UX Projects</span>
+            <div class="works__data">
+              <span class="works__title">ASPCA Ethical Breeding App</span>
+            </div>
+          </div>
+
+          <!-- 5. Hands Off My Hoard -->
+          <div class="works__img" data-category="team" data-modal-target="#HandsOffMyHoard">
+            <div class="works__thumb--placeholder">
+              <i class="bx bx-game"></i>
+              <span>Hands Off My Hoard</span>
+            </div>
+            <span class="works__category-badge">Team Projects</span>
+            <div class="works__data">
+              <span class="works__title">Hands Off My Hoard</span>
+            </div>
+          </div>
+
+          <!-- 6. Bugaboo Planet -->
+          <div class="works__img" data-category="team" data-modal-target="#BugabooPlanet">
+            <div class="works__thumb--placeholder">
+              <i class="bx bx-planet"></i>
+              <span>Bugaboo Planet</span>
+            </div>
+            <span class="works__category-badge">Team Projects</span>
+            <div class="works__data">
+              <span class="works__title">Bugaboo Planet</span>
+            </div>
+          </div>
+
+          <!-- 7. Rooms Too Small to Breathe -->
+          <div class="works__img" data-category="team" data-modal-target="#RoomsTooSmall">
+            <div class="works__thumb--placeholder">
+              <i class="bx bx-home-heart"></i>
+              <span>Rooms Too Small to Breathe</span>
+            </div>
+            <span class="works__category-badge">Team Projects</span>
+            <div class="works__data">
+              <span class="works__title">Rooms Too Small to Breathe</span>
+            </div>
+          </div>
+
+          <!-- 8. Animask GGJ 2026 -->
+          <div class="works__img" data-category="team" data-modal-target="#Animask">
+            <div class="works__thumb--placeholder">
+              <i class="bx bx-mask"></i>
+              <span>Animask — GGJ 2026</span>
+            </div>
+            <span class="works__category-badge">Team Projects</span>
+            <div class="works__data">
+              <span class="works__title">Animask — GGJ 2026</span>
+            </div>
+          </div>
+
+          <!-- 9. Vedalon Primer -->
+          <div class="works__img" data-category="personal" data-modal-target="#VedalonPrimer">
+            <img src="assets/img/works4.webp" alt="Vedalon Primer — Fantasy Worldbuilding" />
+            <span class="works__category-badge">Personal</span>
+            <div class="works__data">
+              <span class="works__title">Vedalon Primer</span>
+            </div>
+          </div>
+
+          <!-- 10. Rive Mascot Animation -->
+          <div class="works__img" data-category="personal" data-modal-target="#MascotAnimation">
+            <img src="assets/img/mascot_preview.png" alt="Rive Mascot Animation" />
+            <span class="works__category-badge">Personal</span>
+            <div class="works__data">
+              <span class="works__title">Rive Mascot Animation</span>
+            </div>
+          </div>
+
+          <!-- 11. Incident in Sillyville -->
+          <div class="works__img" data-category="personal" data-modal-target="#IncidentInSillyville">
+            <div class="works__thumb--placeholder">
+              <i class="bx bx-movie-play"></i>
+              <span>Incident in Sillyville</span>
+            </div>
+            <span class="works__category-badge">Personal</span>
+            <div class="works__data">
+              <span class="works__title">Incident in Sillyville</span>
+            </div>
+          </div>
+
+          <!-- 12. Creepy Lil' Treehouse -->
+          <div class="works__img" data-category="personal" data-modal-target="#CreepyLilTreehouse">
+            <div class="works__thumb--placeholder">
+              <i class="bx bx-tree"></i>
+              <span>Creepy Lil' Treehouse</span>
+            </div>
+            <span class="works__category-badge">Personal</span>
+            <div class="works__data">
+              <span class="works__title">Creepy Lil' Treehouse</span>
+            </div>
+          </div>
+
+          <!-- 13. Sound Redesign -->
+          <div class="works__img" data-category="personal" data-modal-target="#SoundRedesign">
+            <div class="works__thumb--placeholder">
+              <i class="bx bx-headphone"></i>
+              <span>Sound Redesign</span>
+            </div>
+            <span class="works__category-badge">Personal</span>
+            <div class="works__data">
+              <span class="works__title">Sound Redesign</span>
+            </div>
+          </div>
+
+          <!-- 14. Shonen Fighter TTRPG -->
+          <div class="works__img" data-category="personal" data-modal-target="#ShonenFighterTTRPG">
+            <img src="assets/img/works3.jpg" alt="Shonen Fighter TTRPG" />
+            <span class="works__category-badge">Personal</span>
             <div class="works__data">
               <span class="works__title">Shonen Fighter TTRPG</span>
             </div>
@@ -362,423 +423,838 @@
 
         </div>
 
-        <!-- Modal for Mascot Animation -->
-        <div class="modal" id="MascotAnimation">
+        <!-- ==================== MODALS ==================== -->
+
+        <!-- Modal: Tidalflow Internship (Mode A) -->
+        <div class="modal" id="Tidalflow">
           <div class="modal-header">
-            <div class="title">Mascot Vector Animation</div>
+            <div class="title">Tidalflow AI × Design Internship</div>
             <button data-close-button class="close-button">&times;</button>
           </div>
           <div class="modal-body">
-            <h3>Project Overview</h3>
+            <div class="modal-media-area">
+              <div class="modal-media-placeholder">
+                <i class="bx bx-image-alt"></i>
+                <span>Blurred design audit screenshot — coming soon</span>
+              </div>
+            </div>
+
+            <h3>Overview</h3>
             <p>
-              Designed, rigged, and animated a mascot character in Rive to
-              represent my personal brand. The goal was to create a fun,
-              approachable, and professional character that communicates my
-              creative style while being technically reusable for my portfolio
-              website.
+              A 5-month design internship at Tidalflow AI, working on
+              <em>Lila: Perimenopause Coach &amp; Diet</em> — a personalized
+              wellness app that tracks hormonal symptoms and builds daily
+              nutrition plans for women navigating perimenopause. Deliverables
+              included a design audit, update prototypes, and a full new
+              onboarding flow. All designs are confidential; the showcase uses a
+              partially blurred screenshot of the audit file to demonstrate
+              organisation, design professionalism, and research quality.
+            </p>
+
+            <h3>My Role</h3>
+            <p>Design Intern — working within and presenting directly to the Tidalflow team.</p>
+
+            <h3>Tools &amp; Technologies</h3>
+            <ul>
+              <li>Figma</li>
+              <li>Rive</li>
+            </ul>
+
+            <h3>Process</h3>
+            <p>
+              Conducted a thorough design audit of the existing app with
+              improvement suggestions for team review. Performed gamification
+              research and deep competitor analysis of the top 4 health and
+              wellness apps on the App Store, focusing on onboarding patterns.
+              Developed the new onboarding flow as the primary deliverable based
+              on those findings.
+            </p>
+
+            <h3>Key Highlights</h3>
+            <ul>
+              <li>New onboarding flow — biggest deliverable, grounded in competitor research</li>
+              <li>Design audit with actionable improvement recommendations</li>
+              <li>App update prototypes and gamification feature concepts</li>
+              <li>Presented findings and proposals directly to the Tidalflow team</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Modal: Royal Racers (Mode A) -->
+        <div class="modal" id="RoyalRacers">
+          <div class="modal-header">
+            <div class="title">Royal Racers — UI/UX Advanced</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-media-area">
+              <div class="figma-embed-container">
+                <div class="figma-placeholder">
+                  <i class="bx bx-image-alt"></i>
+                  <span>Figma embed — coming soon</span>
+                </div>
+                <!-- <iframe src="FIGMA_EMBED_URL" allowfullscreen></iframe> -->
+              </div>
+              <a href="#" class="button figma-fallback-btn" target="_blank">Open in Figma</a>
+            </div>
+
+            <h3>Overview</h3>
+            <p>
+              Built a hi-fi prototype of a racing simulation game offering
+              competitive multiplayer — single races or full circuits. The
+              prototype is a complete solution: aesthetically polished,
+              functionally comprehensive, and content-accurate as a
+              representation of the final product.
+            </p>
+
+            <h3>My Role</h3>
+            <p>Solo — concept, UI design, component creation, prototyping, and iteration.</p>
+
+            <h3>Tools &amp; Technologies</h3>
+            <ul>
+              <li>Figma — custom UI element design and interactive prototyping</li>
+            </ul>
+
+            <h3>Process</h3>
+            <p>
+              A/B tested prototypes to iterate based on user feedback. Conducted
+              competitor research into the racing genre and popular multiplayer
+              mobile games. Built custom UI components in Figma informed by
+              feature and competitor analysis.
+            </p>
+
+            <h3>Key Highlights</h3>
+            <ul>
+              <li>Hi-fi prototype — Version A, Version B, and final iteration</li>
+              <li>UI stylesheet documenting all custom components</li>
+              <li>Custom-built UI elements designed from scratch in Figma</li>
+              <li>A/B user testing drove iterative design decisions</li>
+            </ul>
+
+            <div class="modal-links">
+              <a href="#" class="modal-link-btn" target="_blank">Prototype Version A</a>
+              <a href="#" class="modal-link-btn" target="_blank">Prototype Version B</a>
+              <a href="#" class="modal-link-btn" target="_blank">Final Prototype</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal: Kaiju Battle (Mode B — portrait two-column) -->
+        <div class="modal modal--mode-b" id="KaijuBattle">
+          <div class="modal-header">
+            <div class="title">Kaiju Battle — Design Thinking</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body modal-body--two-col">
+            <div class="modal-info">
+              <h3>Overview</h3>
+              <p>
+                Conducted fanbase and user research on the Godzilla/kaiju IP and
+                created an interactive mobile app prototype for a transmedia
+                storytelling experience: a turn-based kaiju fighting game with
+                Pokémon-inspired mechanics, designed for fans of the franchise.
+              </p>
+
+              <h3>My Role</h3>
+              <p>Solo — research, concept, prototyping, testing, and documentation.</p>
+
+              <h3>Tools &amp; Technologies</h3>
+              <ul>
+                <li>Figma</li>
+              </ul>
+
+              <h3>Process</h3>
+              <p>
+                Applied the full design thinking methodology: Empathize → Define
+                → Ideate → Prototype → Test. Conducted a fanbase survey (17
+                respondents via Discord), built an empathy map, performed desk
+                research across fan communities, wrote a POV statement, and
+                developed 3 solution concepts each with SWOT analysis. Ran 4
+                user tests with feedback capture grids and a test survey.
+                Iterated from v1 to a final prototype based on tester feedback.
+              </p>
+
+              <h3>Key Highlights</h3>
+              <ul>
+                <li>Two prototype versions — v1 and final, showing clear design iteration</li>
+                <li>Justification report documenting the full design thinking process</li>
+                <li>17-respondent fanbase survey via Discord</li>
+                <li>4 user tests with structured feedback grids</li>
+                <li>3 solution concepts evaluated with SWOT analysis</li>
+              </ul>
+
+              <div class="modal-links">
+                <a href="#" class="modal-link-btn" target="_blank">Prototype v1</a>
+                <a href="#" class="modal-link-btn" target="_blank">Final Prototype</a>
+              </div>
+            </div>
+            <div class="modal-media-col">
+              <div class="figma-embed-container figma-embed-container--portrait">
+                <div class="figma-placeholder">
+                  <i class="bx bx-image-alt"></i>
+                  <span>Figma prototype embed — coming soon</span>
+                </div>
+                <!-- <iframe src="FIGMA_EMBED_URL" allowfullscreen></iframe> -->
+              </div>
+              <a href="#" class="button figma-fallback-btn" target="_blank">Open in Figma</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal: ASPCA Ethical Breeding (Mode B — portrait two-column) -->
+        <div class="modal modal--mode-b" id="ASPCA">
+          <div class="modal-header">
+            <div class="title">ASPCA Ethical Breeding App</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body modal-body--two-col">
+            <div class="modal-info">
+              <h3>Overview</h3>
+              <p>
+                Concept and prototype for the ASPCA animal welfare campaign,
+                specifically ethical breeding. Selected concept: <em>Furry
+                Friend Defense Force</em> — an app showing local shelters, pet
+                stores, and breeders with ethical ratings, foster opportunities,
+                a donation/reward system, and a map to flag unethical
+                businesses. Target audience defined via Sinus-Milieus (Neo-Ecological Milieu).
+              </p>
+
+              <h3>My Role</h3>
+              <p>Solo — research, empathy mapping, concept development, prototyping, and testing.</p>
+
+              <h3>Tools &amp; Technologies</h3>
+              <ul>
+                <li>Figma</li>
+              </ul>
+
+              <h3>Process</h3>
+              <p>
+                Applied the Empathize, Define, Ideate, Prototype, Test
+                methodology with a behavioural design focus. Developed 3
+                solution concepts with SWOT analysis, then chose and
+                prototyped Furry Friend Defense Force. Applied the Hook Model,
+                Fogg Behavior Model, variable rewards, NUDGE strategies,
+                Social Judgement Theory, ELM, and multiple persuasion
+                principles throughout. Two prototype iterations with structured
+                testing between each (peer feedback grids and an 8-respondent
+                survey).
+              </p>
+
+              <h3>Key Highlights</h3>
+              <ul>
+                <li>Two prototype iterations — lo-fi to hi-fi, with testing between each</li>
+                <li>Behavioural design theory applied throughout (Hook Model, Fogg, NUDGE, etc.)</li>
+                <li>3 solution concepts with SWOT analysis</li>
+                <li>8-respondent Google Forms test survey for iteration 2</li>
+                <li>ASPCA brand palette used for visual consistency</li>
+              </ul>
+
+              <div class="modal-links">
+                <a href="#" class="modal-link-btn" target="_blank">Prototype v1</a>
+                <a href="#" class="modal-link-btn" target="_blank">Prototype v2</a>
+              </div>
+            </div>
+            <div class="modal-media-col">
+              <div class="figma-embed-container figma-embed-container--portrait">
+                <div class="figma-placeholder">
+                  <i class="bx bx-image-alt"></i>
+                  <span>Figma prototype embed — coming soon</span>
+                </div>
+                <!-- <iframe src="FIGMA_EMBED_URL" allowfullscreen></iframe> -->
+              </div>
+              <a href="#" class="button figma-fallback-btn" target="_blank">Open in Figma</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal: Hands Off My Hoard (Mode A) -->
+        <div class="modal" id="HandsOffMyHoard">
+          <div class="modal-header">
+            <div class="title">Hands Off My Hoard</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-media-area">
+              <div class="figma-embed-container">
+                <div class="figma-placeholder">
+                  <i class="bx bx-image-alt"></i>
+                  <span>Figma UI prototype embed — coming soon</span>
+                </div>
+                <!-- <iframe src="FIGMA_EMBED_URL" allowfullscreen></iframe> -->
+              </div>
+              <a href="#" class="button figma-fallback-btn" target="_blank">Open in Figma</a>
+            </div>
+
+            <h3>Overview</h3>
+            <p>
+              A mobile game built in 3 weeks by a team of 6 that leverages the
+              device gyroscope and microphone for gameplay. You are a dragon
+              defending your hoard from waves of adventurers, using gyroscope
+              and voice controls to unleash flame breath, tail whips, and claw
+              swipes. As your hoard grows, enemies get stronger — but so do your
+              options, with minions, traps, and magical relics from fallen
+              challengers. A roguelite upgrade shop sits between waves.
             </p>
 
             <h3>My Role</h3>
             <p>
-              Solo Designer & Animator (Concept, Rigging, Animation, Branding)
+              Designer — game concept, mechanic and level design, level setup
+              and testing in Unity, UI/UX design and development (primary
+              contribution), playtesting, progress pitch presenter.
+            </p>
+            <p>
+              <strong>Team:</strong> Darren Chandra (engineer), Valentin Draganov &amp;
+              Vsevolod Kozlyk (artists), Andrii Tiazkorob &amp; Octavian Micu
+              (designers)
             </p>
 
-            <h3>Technologies Used</h3>
+            <h3>Tools &amp; Technologies</h3>
             <ul>
-              <li>Rive (Rigging & Animation)</li>
-              <li>Figma (Design & Iterations)</li>
-              <li>Vector Illustration</li>
+              <li>Figma — UI design and iteration</li>
+              <li>Unity — level setup and testing</li>
             </ul>
 
-            <h3>Key Features</h3>
+            <h3>Process</h3>
+            <p>
+              Designed and iterated all in-game UI over the 3-week sprint: HUD,
+              menus, buttons, and roguelite item/upgrade cards. UI design was the
+              primary contribution, with close collaboration between designers
+              and the engineer for implementation.
+            </p>
+
+            <h3>Key Highlights</h3>
             <ul>
-              <li>
-                Round, friendly mascot designed through silhouette and color
-                exploration
-              </li>
-              <li>Rigged with a clean bone hierarchy for smooth movement</li>
-              <li>
-                3 interactive animations (idle belly tap, greeting wave,
-                dance/jig)
-              </li>
-              <li>
-                State machine setup for event-based triggers (on_hover,
-                on_click)
-              </li>
+              <li>All custom in-game UI designed from scratch — HUD, menus, roguelite item cards</li>
+              <li>UI stylesheet for consistent visual language across all screens</li>
+              <li>Gyroscope and microphone input integration (design side)</li>
+              <li>Arcade-style endless wave survival with roguelite upgrade loop</li>
             </ul>
 
-            <h3>Learning Highlights</h3>
-            <p>
-              This project challenged me to combine branding, character design,
-              and technical rigging. I gained hands-on experience with Rive’s
-              animation workflow, including bone weighting, constraints, and
-              state machines.
-            </p>
-          </div>
-        </div>
-        <!-- Modal for SquareSquare -->
-        <div class="modal" id="SquareSquare">
-          <div class="modal-header">
-            <div class="title">SquareSquare: 2D Puzzle Game</div>
-            <button data-close-button class="close-button">&times;</button>
-          </div>
-          <div class="modal-body">
-            <h3>Project Overview</h3>
-            <p>
-              Designed and developed a minimalist 2D puzzle game prototype in Unity. The goal was to explore puzzle design principles and game theory while keeping the scope small and mechanics engaging. The final build features sliding square mechanics, multiple puzzle levels, and functional UI, embedded directly into my portfolio website as a WebGL game.
-            </p>
-            <h3>My Role</h3>
-            <p>
-              Solo Game Designer & Developer (Concept, Puzzle Design, Level Design, UI/UX, Unity Implementation)
-            </p>
-            <h3>Technologies Used</h3>
-            <ul>
-              <li>Unity (2D Framework, Scripting, WebGL Build)</li>
-              <li>Figma (Logo & UI Elements)</li>
-              <li>AI Tools (ChatGPT, Claude, Cursor IDE for scripting support)</li>
-            </ul>
-            <h3>Key Features</h3>
-            <ul>
-              <li>Core mechanic: sliding colored squares that move simultaneously until blocked</li>
-              <li>Progressive levels introducing hazards, bouncy walls, and multiple goals</li>
-              <li>Functional menus with scene and level progression tracking</li>
-              <li>WebGL integration for direct in-browser play on portfolio site</li>
-            </ul>
-            <h3>Learning Highlights</h3>
-            <p>
-              This project taught me how to scope a puzzle game effectively, prioritize functionality over polish, and balance puzzle difficulty through iterative testing. I also gained experience managing technical debt in Unity projects while focusing on design outcomes.
-            </p>
+            <div class="modal-links">
+              <a href="#" class="modal-link-btn" target="_blank">Figma UI Prototype</a>
+            </div>
           </div>
         </div>
 
-        <!-- Modal for Map -->
-        <div class="modal" id="Map">
+        <!-- Modal: Bugaboo Planet (Mode A) -->
+        <div class="modal" id="BugabooPlanet">
           <div class="modal-header">
-            <div class="title">Fantasy Worldbuilding: Map of Vedalon</div>
+            <div class="title">Bugaboo Planet — MONSTeR Project</div>
             <button data-close-button class="close-button">&times;</button>
           </div>
           <div class="modal-body">
-            <div class="game-showcase">
-              <div class="game-images">
-                <div class="game-image-grid">
-                  <div class="game-image-container">
-                    <img src="assets/img/works4-mockup.png" alt="Map of Vedalon" class="gameplay-image" />
-                    <div class="image-caption">Map of Vedalon</div>
-                  </div>
-                  <div class="game-image-container">
-                    <img src="assets/img/works4-flags.png" alt="Nation Flags and Emblems" class="gameplay-image" />
-                    <div class="image-caption">Nation Flags and Emblems</div>
+            <div class="modal-media-area">
+              <div class="game-showcase">
+                <div class="game-images">
+                  <div class="game-image-grid">
+                    <div class="game-image-container">
+                      <div class="modal-media-placeholder" style="aspect-ratio: auto; height: 180px; margin: 0;">
+                        <i class="bx bx-image-alt"></i>
+                        <span>Game screenshot — coming soon</span>
+                      </div>
+                    </div>
+                    <div class="game-image-container">
+                      <div class="modal-media-placeholder" style="aspect-ratio: auto; height: 180px; margin: 0;">
+                        <i class="bx bx-camera"></i>
+                        <span>Library exhibition photo — coming soon</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <h3>Project Overview</h3>
+
+            <h3>Overview</h3>
             <p>
-              Designed a comprehensive fantasy world through cartography, narrative worldbuilding, and visual design. Created the world of Vedalon featuring seven distinct sovereign nations, each with unique cultural identities, governments, and heraldic symbolism. The project combined research into worldbuilding conventions with hands-on design work to establish a foundation for future storytelling.
+              An 8-week game project in partnership with Saxion Hogeschool, de
+              Bibliotheek Enschede, and International School Twente. A class of
+              children (ages 6–12) drew monsters with imagined powers — the team
+              brought them to life in an interactive Unity game showcased
+              publicly at the local library. An explorable 3D planet hub leads
+              players to biome islands, each with a minigame tied to a monster.
             </p>
+
             <h3>My Role</h3>
             <p>
-              Solo Worldbuilder, Narrative Designer & Visual Designer (Research, World Concept, Map Design, Flag & Emblem Creation)
+              Project Manager and Game Designer — client outreach and
+              communication, daily stand-ups, scrum master, internal organisation
+              and documentation, development timeline planning; plus concept
+              development, game design documentation, minigame mechanics, UI/UX
+              design, and playtesting.
             </p>
-            <h3>Technologies Used</h3>
-            <ul>
-              <li>Inkarnate (Fantasy Map Creation & Terrain Design)</li>
-              <li>Figma (Vector Graphics & Flag Design)</li>
-              <li>Research Resources (Brandon Sanderson maps, D&D materials, "A Magical Society: Guide to Mapping")</li>
-            </ul>
-            <h3>Key Features</h3>
-            <ul>
-              <li>Seven unique nations with distinct cultural identities, governance systems, and themes</li>
-              <li>High-level fantasy world map with believable geography and terrain</li>
-              <li>Custom vector emblems and heraldic swallowtail flags for each nation</li>
-              <li>Iterative design process where geography informed lore and vice versa</li>
-              <li>Comprehensive lore primer documenting themes, parallels, and government structures</li>
-            </ul>
-            <h3>Learning Highlights</h3>
             <p>
-              This 93-hour project strengthened my creative worldbuilding and narrative design skills. I learned to balance ambition with scope, gained proficiency in vector graphic design without a drawing tablet, and developed confidence in creative decision-making. The symbiotic relationship between map-making and narrative development taught me how geography can drive storytelling and cultural identity.
+              <strong>Team:</strong> Valentin Draganov &amp; Vsevolod Kozlyk &amp; David (artists),
+              Octavian Micu (lead designer), Jacob &amp; Renato (engineers)
             </p>
+
+            <h3>Tools &amp; Technologies</h3>
+            <ul>
+              <li>Unity</li>
+              <li>Trello, Discord — project management</li>
+              <li>Scrum/Agile</li>
+            </ul>
+
+            <h3>Process</h3>
+            <p>
+              Three phases: MVP (weeks 1–4), peer testing (weeks 5–8),
+              exhibition-ready polish. Visited the IST class to discuss concepts
+              with the children. Playtested the MVP at school — strong
+              engagement, kids lined up repeatedly. Ran A/B tests on both
+              minigames for visual clarity. Managed scope proactively with a
+              planned fallback (one minigame cut early to protect quality).
+            </p>
+
+            <h3>Key Highlights</h3>
+            <ul>
+              <li>Exhibition-ready Unity game — planet hub and 2 competitive minigames</li>
+              <li>6 playable monster characters based on children's original drawings</li>
+              <li>Validated by real child playtesters at IST school before exhibition</li>
+              <li>Public showcase at de Bibliotheek Enschede</li>
+              <li>Real-world client collaboration (library + primary school)</li>
+            </ul>
           </div>
         </div>
 
+        <!-- Modal: Rooms Too Small to Breathe (Mode A) -->
+        <div class="modal" id="RoomsTooSmall">
+          <div class="modal-header">
+            <div class="title">Rooms Too Small to Breathe</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-media-area">
+              <video controls class="modal-video">
+                <source src="assets/video/rooms-too-small-trailer.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
 
-                <!-- Modal for TTRPG -->
-        <div class="modal" id="TTRPG">
+            <h3>Overview</h3>
+            <p>
+              An interactive awareness game based on the NSPCC "Listen Up, Speak
+              Up" campaign. Core message: educating the public to recognise child
+              abuse and encouraging proactive action. A narrative puzzle game
+              with multiple endings, designed to make the subject matter
+              approachable without diminishing its weight.
+            </p>
+
+            <h3>My Role</h3>
+            <p>
+              Game Designer — concept, story, and characters; level design;
+              interaction mechanics and NPC dialogue (multiple endings and puzzle
+              layout); playtesting; game documentation; promo video (in-game
+              footage edited in Premiere Pro).
+            </p>
+            <p>
+              <strong>Team:</strong> Daniela Voicu &amp; Gerran Roord (engineers),
+              Andrei Marincu (designer), Urith Ahmed &amp; Elin Graafland (artists)
+            </p>
+
+            <h3>Tools &amp; Technologies</h3>
+            <ul>
+              <li>Unity</li>
+              <li>Figma</li>
+              <li>Premiere Pro — promo video editing</li>
+            </ul>
+
+            <h3>Process</h3>
+            <p>
+              Designed multiple endings and branching NPC dialogue systems to
+              give players meaningful choices. Iterative playtesting refined
+              puzzle difficulty and narrative clarity. Created the promo trailer
+              using in-game footage captured and edited in Premiere Pro.
+            </p>
+
+            <h3>Key Highlights</h3>
+            <ul>
+              <li>Interactive game with branching narrative and multiple endings</li>
+              <li>Campaign-driven design — every mechanic tied to the NSPCC message</li>
+              <li>Promo/trailer video produced in Premiere Pro</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Modal: Animask GGJ 2026 (Mode A) -->
+        <div class="modal" id="Animask">
+          <div class="modal-header">
+            <div class="title">Animask — Global Game Jam 2026</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-media-area">
+              <div class="game-image-grid">
+                <div class="game-image-container">
+                  <div class="modal-media-placeholder" style="aspect-ratio: auto; height: 180px; margin: 0;">
+                    <i class="bx bx-image-alt"></i>
+                    <span>Screenshot — coming soon</span>
+                  </div>
+                </div>
+                <div class="game-image-container">
+                  <div class="modal-media-placeholder" style="aspect-ratio: auto; height: 180px; margin: 0;">
+                    <i class="bx bx-image-alt"></i>
+                    <span>Screenshot — coming soon</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3>Overview</h3>
+            <p>
+              A 72-hour Global Game Jam entry for the theme "MASK," submitted
+              under "Global Game Jam at Sickhouse." You play as a zookeeper who
+              leads animals back to their enclosures by wearing different animal
+              masks to influence your surroundings and the animals' behaviour.
+              Puzzles grow in complexity, with some levels having multiple valid
+              solutions. Teaching levels introduce each new mechanic before it
+              appears in challenge levels. One of the top games at the jam.
+            </p>
+
+            <h3>My Role</h3>
+            <p>
+              Lead Designer — game concept and puzzle/level design. Designed all
+              15 playable levels around the core mask mechanic.
+            </p>
+            <p>
+              <strong>Team:</strong> Lena Van (art), Iain Harrison (design &amp;
+              gameplay programming), Arjen de Aldrey (UI implementation)
+            </p>
+
+            <h3>Tools &amp; Technologies</h3>
+            <ul>
+              <li>Unity</li>
+            </ul>
+
+            <h3>Key Highlights</h3>
+            <ul>
+              <li>15 handcrafted puzzle levels designed around the mask-switching mechanic</li>
+              <li>Multi-solution puzzle design for replayability</li>
+              <li>Teaching level structure for smooth mechanical onboarding</li>
+              <li>Recognised as one of the top games at the jam</li>
+            </ul>
+
+            <div class="modal-links">
+              <a href="#" class="modal-link-btn" target="_blank">Play on itch.io</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal: Vedalon Primer (Mode A) -->
+        <div class="modal" id="VedalonPrimer">
+          <div class="modal-header">
+            <div class="title">Vedalon Primer — Fantasy Worldbuilding</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-media-area">
+              <div class="game-showcase">
+                <div class="game-images">
+                  <div class="game-image-grid">
+                    <div class="game-image-container">
+                      <img
+                        src="assets/img/works4-mockup.png"
+                        alt="Map of Vedalon"
+                        class="gameplay-image"
+                      />
+                      <div class="image-caption">Map of Vedalon</div>
+                    </div>
+                    <div class="game-image-container">
+                      <img
+                        src="assets/img/works4-flags.png"
+                        alt="Nation Flags and Emblems"
+                        class="gameplay-image"
+                      />
+                      <div class="image-caption">Nation Flags &amp; Emblems</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3>Overview</h3>
+            <p>
+              A 93-hour personal worldbuilding project creating the world of
+              Vedalon — a detailed fantasy setting with seven sovereign nations,
+              each with unique governments, cultures, trade exports, and
+              identities. Deliverables include a hand-crafted cartographic map,
+              seven heraldic swallowtail flags, and a nations lore primer.
+            </p>
+
+            <h3>My Role</h3>
+            <p>Solo — research, world concept, map design, flag and emblem creation.</p>
+
+            <h3>Tools &amp; Technologies</h3>
+            <ul>
+              <li>Inkarnate Pro — fantasy map creation and terrain design</li>
+              <li>Figma — vector emblem design and nation border visualization</li>
+            </ul>
+
+            <h3>Process</h3>
+            <p>
+              Researched fantasy cartography conventions: Sanderson's diegetic
+              maps, D&amp;D Dungeon Master's Handbook for settlement design, "A
+              Magical Society: Guide to Mapping," and YouTube tutorials from
+              worldbuilding creators and official Inkarnate streams. Concepted 7
+              nations with distinct identities and iterated the map through
+              multiple landmass drafts using Figma overlays. Researched medieval
+              heraldry and vexillology; hand-drew emblem variations, gathered
+              peer feedback via Discord, then vectorised final designs in Figma.
+            </p>
+
+            <h3>Key Highlights</h3>
+            <ul>
+              <li>Complete world map — 7 nations, labelled POIs, old-style cartography aesthetic</li>
+              <li>7 swallowtail heraldic flags with custom vector emblems and two-colour schemes</li>
+              <li>Nations of Vedalon lore primer — governance, culture, and description for each nation</li>
+              <li>Map left intentionally imperfect to mimic an in-world cartography artifact</li>
+              <li>No AI used for concept or narrative creation</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Modal: Rive Mascot Animation (Mode A) -->
+        <div class="modal" id="MascotAnimation">
+          <div class="modal-header">
+            <div class="title">Rive Mascot Vector Animation</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-media-area">
+              <video controls class="modal-video">
+                <source src="assets/video/mascot-animation.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <h3>Overview</h3>
+            <p>
+              Designed, rigged, and animated a personal mascot character in Rive
+              to represent my creative brand. The process covered character
+              design using colour theory, shape language, silhouette, posing,
+              and reference gathering — then full rigging and animation in Rive,
+              producing three distinct animation loops.
+            </p>
+
+            <h3>My Role</h3>
+            <p>Solo — character design, rigging, animation, and Rive state machine setup.</p>
+
+            <h3>Tools &amp; Technologies</h3>
+            <ul>
+              <li>Rive — rigging, animation, and state machine</li>
+              <li>Figma — character design and iteration</li>
+            </ul>
+
+            <h3>Key Highlights</h3>
+            <ul>
+              <li>3 animations: idle loop, greeting wave, dance/jig loop</li>
+              <li>Character design through colour theory, shape language, and silhouette exploration</li>
+              <li>Clean bone hierarchy for smooth, natural movement</li>
+              <li>Rive state machine with event-based triggers (on_hover, on_click)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Modal: Incident in Sillyville (Mode A) -->
+        <div class="modal" id="IncidentInSillyville">
+          <div class="modal-header">
+            <div class="title">Incident in Sillyville</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-media-area">
+              <video controls class="modal-video">
+                <source src="assets/video/incident-in-sillyville.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <h3>Overview</h3>
+            <p>
+              A 1–3 minute animated short created as a Cinematics course
+              assignment. A silly story about a king who leaves his kingdom of
+              Sillyville — his grumpy hand betrays him and takes over. When the
+              king returns, he restores order, and they both learn about
+              friendship and forgiveness. Produced using paper puppet characters
+              filmed and edited in Premiere Pro.
+            </p>
+
+            <h3>My Role</h3>
+            <p>Solo — storyboarding, paper puppet design and construction, animation, video editing.</p>
+
+            <h3>Tools &amp; Technologies</h3>
+            <ul>
+              <li>Premiere Pro</li>
+            </ul>
+
+            <h3>Key Highlights</h3>
+            <ul>
+              <li>Animated storyboard used as the production guide</li>
+              <li>Hand-drawn and constructed paper puppet characters</li>
+              <li>Final cinematic assembled and edited in Premiere Pro</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Modal: Creepy Lil' Treehouse (Mode A) -->
+        <div class="modal" id="CreepyLilTreehouse">
+          <div class="modal-header">
+            <div class="title">Creepy Lil' Treehouse — 3D Modelling</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-media-area">
+              <div class="modal-media-placeholder">
+                <i class="bx bx-image-alt"></i>
+                <span>Render screenshot — coming soon</span>
+              </div>
+            </div>
+
+            <h3>Overview</h3>
+            <p>
+              Created an optimised 3D treehouse model — modelled, UV unwrapped,
+              textured, and exported for use in Unity3D and Sketchfab. Final
+              model: 12,900 tris and 6,800 vertices. Published to Sketchfab as
+              "Creepy Lil' Treehouse."
+            </p>
+
+            <h3>My Role</h3>
+            <p>Solo — modelling, UV unwrapping, texturing, and export.</p>
+
+            <h3>Tools &amp; Technologies</h3>
+            <ul>
+              <li>Maya — modelling and UV unwrapping</li>
+              <li>Adobe Substance Painter — texturing</li>
+              <li>Unity3D</li>
+              <li>Sketchfab</li>
+            </ul>
+
+            <h3>Key Highlights</h3>
+            <ul>
+              <li>Optimised asset — 12.9k tris, 6.8k vertices</li>
+              <li>Full UV unwrap and hand-painted textures in Substance Painter</li>
+              <li>Exported and verified in both Unity3D and Sketchfab</li>
+            </ul>
+
+            <div class="modal-links">
+              <a href="#" class="modal-link-btn" target="_blank">View on Sketchfab</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal: Sound Redesign (Mode A) -->
+        <div class="modal" id="SoundRedesign">
+          <div class="modal-header">
+            <div class="title">"No One Will Save You" — Sound Redesign</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-media-area">
+              <div class="modal-video-comparison">
+                <div class="modal-video-col">
+                  <p class="modal-video-label">Original Trailer</p>
+                  <video controls class="modal-video">
+                    <source src="" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div class="modal-video-col">
+                  <p class="modal-video-label">Sound Redesign</p>
+                  <video controls class="modal-video">
+                    <source src="assets/video/no-one-will-save-you-redesign.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <h3>Overview</h3>
+            <p>
+              A Sound Design course assignment: recreate the audio of a supplied
+              trailer from scratch, including ambient sounds, voiceover, sound
+              effects, and foley. Trailer chosen: the official "No One Will Save
+              You" movie trailer. Every audio element was created or sourced and
+              re-composited in Ableton Live.
+            </p>
+
+            <h3>My Role</h3>
+            <p>Solo — sound design, audio composition, and final mix in Ableton Live.</p>
+
+            <h3>Tools &amp; Technologies</h3>
+            <ul>
+              <li>Ableton Live</li>
+            </ul>
+
+            <h3>Key Highlights</h3>
+            <ul>
+              <li>Complete sound redesign — ambient, voiceover, SFX, and foley from scratch</li>
+              <li>Original trailer available alongside the redesign for direct comparison</li>
+              <li>Delivered as a full .mp4 render with new audio track</li>
+            </ul>
+
+            <div class="modal-links">
+              <a href="#" class="modal-link-btn" target="_blank">Original Trailer (YouTube)</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal: Shonen Fighter TTRPG (Mode A) -->
+        <div class="modal" id="ShonenFighterTTRPG">
           <div class="modal-header">
             <div class="title">Shonen Fighter TTRPG</div>
             <button data-close-button class="close-button">&times;</button>
           </div>
           <div class="modal-body">
-            <img
-              style="
-                width: 60%;
-                margin-bottom: 2%;
-                margin-left: auto;
-                margin-right: auto;
-                display: block;
-              "
-              src="assets/img/works3-sampl.png"
-              alt="Shonen Fighter TTRPG Card System"
-            />
-            <h3>Project Overview</h3>
+            <div class="modal-media-area">
+              <img
+                style="width: 65%; margin: 0 auto 1.5rem; display: block; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"
+                src="assets/img/works3-sampl.png"
+                alt="Shonen Fighter TTRPG Card System"
+              />
+            </div>
+
+            <h3>Overview</h3>
             <p>
-              Designed a custom TTRPG combat system inspired by fast-paced anime fighting and tournament arcs. Created to solve frustrations with traditional D&D's slow progression, this system features tournament-style battles where four players compete in dynamic arenas with transforming maps. The project combines mechanics from D&D 5e, Pathfinder, Lancer, and fighting games to deliver high-energy battles that escalate dramatically within a single session.
+              A custom TTRPG combat system designed to capture the energy of
+              fast-paced anime fighting and tournament arcs. Built to solve
+              frustrations with traditional D&amp;D's slow progression — four
+              players compete in dynamic arenas with transforming maps, fighting
+              for dominance across escalating battles that can be resolved in a
+              single session.
             </p>
+
             <h3>My Role</h3>
-            <p>
-              Solo Game Designer & Developer (System Design, Mechanical Research, Card Design, Playtesting, Iteration)
-            </p>
-            <h3>Technologies Used</h3>
+            <p>Solo — system design, mechanical research, card design, playtesting, and iteration. 106 hours total.</p>
+
+            <h3>Tools &amp; Technologies</h3>
             <ul>
-              <li>Figma (Card Design & Feature Organization)</li>
-              <li>D&D 5e, Pathfinder, Lancer (Mechanical Research & Balance)</li>
-              <li>Daggerheart (Card System & Momentum Mechanic Inspiration)</li>
-              <li>Fighting Game Theory (Frame Data, Advantage States from Tekken & Street Fighter)</li>
+              <li>Figma — card design and feature organisation</li>
+              <li>D&amp;D 5e, Pathfinder, Lancer — mechanical research and balance reference</li>
+              <li>Daggerheart — card system and momentum mechanic inspiration</li>
+              <li>Fighting game theory — frame data and advantage states (Tekken, Street Fighter)</li>
             </ul>
-            <h3>Key Features</h3>
+
+            <h3>Process</h3>
+            <p>
+              Researched multiple TTRPG systems and fighting game theory to
+              identify what creates dynamic, high-energy play. Ran 2 complete
+              playtests with significant mechanical improvements between each.
+              The first playtest revealed major pacing issues and infinite combo
+              potential — leading to a full overhaul of defensive mechanics and
+              the resource system.
+            </p>
+
+            <h3>Key Highlights</h3>
             <ul>
-              <li>Four distinct protagonist archetypes with unique playstyles and abilities</li>
-              <li>Vigilance system replacing traditional initiative with fighting game frame data</li>
-              <li>Momentum mechanic as unified resource system inspired by Daggerheart's Hope/Fear</li>
+              <li>Four distinct protagonist archetypes with unique playstyles and ability sets</li>
+              <li>Vigilance system replacing traditional initiative with fighting game frame-data logic</li>
+              <li>Momentum mechanic as a unified resource system (inspired by Daggerheart's Hope/Fear)</li>
               <li>Card-based ability system for visual clarity and reduced cognitive load</li>
-              <li>Five HP bars tied to power progression, unlocking stronger abilities as fighters are pushed</li>
-              <li>Two complete playtests with iterative mechanical improvements between versions</li>
+              <li>Five HP bars tied to power progression — stronger abilities unlock as fighters are pushed</li>
+              <li>Two complete playtests with full iterative redesign between versions</li>
             </ul>
-            <h3>Learning Highlights</h3>
-            <p>
-              This 106-hour project taught me the complexities of game system balancing and the importance of playtesting. The first playtest revealed major flaws in pacing and infinite combo potential, leading to a complete overhaul of defensive mechanics and resource systems. I learned to prioritize core mechanics over aesthetics, gained experience in UX design for tabletop games, and developed skills in translating video game concepts to analog formats. The project continues beyond this portfolio piece as a Minor Skilled development.
-            </p>
           </div>
         </div>
-
 
       </section>
-      <!--
-      <section class="works section" id="works">
-        <span class="section-subtitle">My Portfolio</span>
-        <h2 class="section-title">Recent Works</h2>
-
-        <div class="works__container bd-grid">
-          <div class="works__img" data-modal-target="#Dusseldorp">
-            <img
-              src="assets/img/work13.jpg"
-              alt="Dusseldorp Visualization Platform - Recreate"
-            />
-
-            <div class="works__data">
-              <span class="works__title">Project Alpha</span>
-            </div>
-          </div>
-
-          <div class="works__img" data-modal-target="#Placeholder">
-            <img
-              src="assets/img/work10.jpg"
-              alt="Placeholder"
-            />
-
-            <div class="works__data">
-              <span class="works__title">Project Epsilon</span>
-            </div>
-          </div>
-
-          <div class="works__img" data-modal-target="#Placeholder">
-            <img src="assets/img/work12.jpg" alt="Placeholder" />
-
-            <div class="works__data">
-              <span class="works__title">Project Zeta</span>
-            </div>
-          </div>
-
-          <div class="works__img" data-modal-target="#Placeholder">
-            <img src="assets/img/work11.jpg" alt="Placeholder" />
-
-            <div class="works__data">
-              <span class="works__title">Project Delta</span>
-            </div>
-          </div>
-
-          <div class="works__img" data-modal-target="#Placeholder">
-            <img src="assets/img/work7.jpg" alt="Placeholder project" />
-
-            <div class="works__data">
-              <span class="works__title">Graduation</span>
-            </div>
-          </div>
-
-          <div class="works__img" data-modal-target="#Placeholder">
-            <img src="assets/img/work8.jpg" alt="Placeholder project" />
-
-            <div class="works__data">
-              <span class="works__title">Project Beta</span>
-            </div>
-          </div>
-
-          <div class="works__img" data-modal-target="#Placeholder">
-            <img src="assets/img/work9.jpg" alt="Placeholder project" />
-
-            <div class="works__data">
-              <span class="works__title">Project Gamma</span>
-            </div>
-          </div>
-
-          <div class="works__img" data-modal-target="#Placeholder">
-            <img src="assets/img/work1.jpg" alt="Placeholder project" />
-
-            <div class="works__data">
-              <span class="works__title">Placeholder</span>
-            </div>
-          </div>
-
-          <div class="works__img" data-modal-target="#Placeholder">
-            <img src="assets/img/work2.jpg" alt="Placeholder project" />
-
-            <div class="works__data">
-              <span class="works__title">Placeholder</span>
-            </div>
-          </div>
-
-          <div class="works__img" data-modal-target="#Placeholder">
-            <img src="assets/img/work4.jpg" alt="Placeholder project" />
-            <div class="works__data">
-              <span class="works__title">Placeholder</span>
-            </div>
-          </div>
-
-          <div class="works__img" data-modal-target="#Placeholder">
-            <img src="assets/img/work6.jpg" alt="Placeholder project" />
-            <div class="works__data">
-              <span class="works__title">Placeholder</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal" id="Placeholder1">
-          <div class="modal-header">
-            <div class="title">Project Placeholder — Education Highlight</div>
-            <button data-close-button class="close-button">&times;</button>
-          </div>
-          <div class="modal-body">
-            <h3>Overview</h3>
-            <p>Brief description of the project or milestone goes here.</p>
-            <h3>Highlights</h3>
-            <ul>
-              <li>Key point one</li>
-              <li>Key point two</li>
-              <li>Key point three</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="modal" id="Placeholder2">
-          <div class="modal-header">
-            <div class="title">Project Placeholder — Video Showcase</div>
-            <button data-close-button class="close-button">&times;</button>
-          </div>
-          <div class="modal-body">
-            <video width="90%" controls>
-              <source src="" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <br />
-            <h3>Overview</h3>
-            <p>Short summary of the project's goals and context.</p>
-            <h3>Role</h3>
-            <p>Role/title on the project.</p>
-            <h3>Technologies</h3>
-            <ul>
-              <li>Tech 1</li>
-              <li>Tech 2</li>
-              <li>Tech 3</li>
-            </ul>
-            <h3>Highlights</h3>
-            <ul>
-              <li>Contribution or result 1</li>
-              <li>Contribution or result 2</li>
-              <li>Contribution or result 3</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="modal" id="Placeholder3">
-          <div class="modal-header">
-            <div class="title">Project Placeholder — GIF/Inline Media</div>
-            <button data-close-button class="close-button">&times;</button>
-          </div>
-          <div class="modal-body">
-            <img
-              style="
-                width: 40%;
-                margin-bottom: 1%;
-                margin-left: auto;
-                margin-right: auto;
-              "
-              src=""
-              alt="Inline media preview"
-            />
-
-            <h3>Overview</h3>
-            <p>Short description of the project and media shown above.</p>
-            <h3>Role</h3>
-            <p>Role/title on the project.</p>
-            <h3>Technologies</h3>
-            <ul>
-              <li>Tech 1</li>
-              <li>Tech 2</li>
-              <li>Tech 3</li>
-            </ul>
-            <h3>Highlights</h3>
-            <ul>
-              <li>Highlight 1</li>
-              <li>Highlight 2</li>
-              <li>Highlight 3</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="modal" id="Placeholder4">
-          <div class="modal-header">
-            <div class="title">Project Placeholder — Image Grid</div>
-            <button data-close-button class="close-button">&times;</button>
-          </div>
-          <div class="modal-body">
-            <div class="game-showcase">
-              <div class="game-images">
-                <div class="game-image-grid">
-                  <div class="game-image-container">
-                    <img src="" alt="Image 1" class="gameplay-image" />
-                    <div class="image-caption">Caption for image 1</div>
-                  </div>
-                  <div class="game-image-container">
-                    <img src="" alt="Image 2" class="gameplay-image" />
-                    <div class="image-caption">Caption for image 2</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <h3>Overview</h3>
-            <p>Short description of the project and images shown above.</p>
-            <h3>Highlights</h3>
-            <ul>
-              <li>Point 1</li>
-              <li>Point 2</li>
-              <li>Point 3</li>
-            </ul>
-          </div>
-        </div>
-
-      -->
-
-      <!--===== TECHNICAL SKILLS SHOWCASE =====-->
-      <!--
-      <section class="skills-showcase section" id="skills-showcase">
-        <span class="section-subtitle">Software Development</span>
-        <h2 class="section-title">Professional Experience</h2>
-        <div class="skills-showcase__container bd-grid">
-          ... commented out temporarily ...
-        </div>
-      </section>
-      -->
 
       <!--===== PROJECT IN MIND =====-->
       <section class="project section">
@@ -794,8 +1270,6 @@
             </p>
             <a href="#contact" class="button button__light">Contact Me</a>
           </div>
-
-          <!-- <img src="assets/img/projectmind.png" alt="" class="project__img" /> -->
         </div>
       </section>
 
@@ -805,20 +1279,6 @@
         <h2 class="section-title">Get In Touch</h2>
 
         <div class="contact__container bd-grid">
-          <!--
-                    <form action="https://formspree.io/f/mnqolwrd" method="post" class="contact__form">
-                        <div class="contact__inputs">
-                            <input type="text" name="Name"  placeholder="Name" class="contact__input">
-                            <input type="email" name="Email" placeholder="Email" class="contact__input">
-                        </div>
-
-                        <input type="text" name="Project" placeholder="Subject" class="contact__input">
-
-                        <textarea name="Message" id="" cols="0"  placeholder="Message"  rows="10" class="contact__input"></textarea>
-
-                        <input type="submit" value="Send Message"class="button contact__button">
-                    </form>
-                    -->
           <div>
             <div class="contact__info">
               <h3 class="contact__subtitle">Call me</h3>
@@ -828,13 +1288,11 @@
             <div class="contact__info">
               <h3 class="contact__subtitle">E-mail</h3>
               <span class="contact__text">oboumelhem@gmail.com</span>
-              <span class="contact__text"></span>
             </div>
 
             <div class="contact__info">
               <h3 class="contact__subtitle">Location</h3>
-              <span class="contact__text"></span>
-              <span class="contact__text">Enschede - Netherlands </span>
+              <span class="contact__text">Enschede — Netherlands</span>
             </div>
           </div>
         </div>
@@ -848,7 +1306,7 @@
       <div class="footer__container bd-grid">
         <h1 class="footer__title">Osama Boumelhem</h1>
         <p class="footer__description">
-          I am Osama Boumelhem and this is my personal website, consult me here.
+          I am Osama Boumelhem and this is my personal portfolio. Get in touch here.
         </p>
 
         <div class="footer__social">

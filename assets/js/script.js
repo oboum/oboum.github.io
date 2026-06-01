@@ -66,6 +66,10 @@ function openModal(modal) {
   modal.classList.add('active');
   overlay.classList.add('active');
   document.body.classList.add('modal-open');
+  // Always scroll modal content to top on open
+  modal.scrollTop = 0;
+  const body = modal.querySelector('.modal-body, .modal-info');
+  if (body) body.scrollTop = 0;
 }
 
 // Function to close modal
@@ -76,12 +80,44 @@ function closeModal(modal) {
   document.body.classList.remove('modal-open');
 }
 
+// ===== WORKS FILTER TABS =====
+function initializeFilters() {
+  const filterBtns = document.querySelectorAll('.works__filter-btn');
+  const workCards = document.querySelectorAll('.works__img[data-category]');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const filter = this.dataset.filter;
+
+      filterBtns.forEach(b => b.classList.remove('filter-active'));
+      this.classList.add('filter-active');
+
+      workCards.forEach(card => {
+        const matches = filter === 'all' || card.dataset.category === filter;
+        if (matches) {
+          // Show: unhide first, then fade in
+          card.style.display = '';
+          requestAnimationFrame(() => {
+            requestAnimationFrame(() => { card.style.opacity = '1'; });
+          });
+        } else {
+          // Hide: fade out first, then remove from layout
+          card.style.opacity = '0';
+          setTimeout(() => { card.style.display = 'none'; }, 300);
+        }
+      });
+    });
+  });
+}
+
 // Initialize the modal system when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
   initializeModalSystem();
+  initializeFilters();
 });
 
 // Initialize immediately if the document is already loaded
 if (document.readyState === 'complete' || document.readyState === 'interactive') {
   initializeModalSystem();
+  initializeFilters();
 }
