@@ -110,14 +110,44 @@ function initializeFilters() {
   });
 }
 
+// ===== CAROUSEL =====
+function initCarousels() {
+  document.querySelectorAll('.carousel').forEach(function(carousel) {
+    var track = carousel.querySelector('.carousel__track');
+    var slides = carousel.querySelectorAll('.carousel__slide');
+    var dots = carousel.querySelectorAll('.carousel__dot');
+    var current = 0;
+
+    function goTo(index) {
+      current = ((index % slides.length) + slides.length) % slides.length;
+      track.style.transform = 'translateX(-' + (current * 100) + '%)';
+      dots.forEach(function(d, i) {
+        d.classList.toggle('active', i === current);
+      });
+    }
+
+    var prevBtn = carousel.querySelector('.carousel__btn--prev');
+    var nextBtn = carousel.querySelector('.carousel__btn--next');
+    if (prevBtn) prevBtn.addEventListener('click', function() { goTo(current - 1); });
+    if (nextBtn) nextBtn.addEventListener('click', function() { goTo(current + 1); });
+    dots.forEach(function(dot, i) {
+      dot.addEventListener('click', function() { goTo(i); });
+    });
+
+    goTo(0);
+  });
+}
+
 // Initialize the modal system when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
   initializeModalSystem();
   initializeFilters();
+  initCarousels();
 });
 
 // Initialize immediately if the document is already loaded
 if (document.readyState === 'complete' || document.readyState === 'interactive') {
   initializeModalSystem();
   initializeFilters();
+  initCarousels();
 }
