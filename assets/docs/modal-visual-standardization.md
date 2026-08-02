@@ -1,4 +1,15 @@
-# Modal Visual Standardization — Plan for a Later Pass
+# Modal Visual Standardization — Complete
+
+**Status: Done.** All 13 modals were migrated to the `.modal-visual`
+component described below, one type at a time with before/after
+desktop-width screenshots per the migration directives, followed by a
+full 13-modal regression pass and deletion of the now-dead legacy CSS.
+See commits `e44dabf`..`e210132` on `main` for the full pass (8
+commits — one per modal-type group, one for the title/footer
+container refactor, one for the final CSS cleanup). The sections
+below are kept as-written for historical context: the architecture
+audit and inventory that motivated the refactor, and the plan that was
+followed.
 
 Prep material for refactoring `.modal-media-col` into a single reusable
 "visual box" component. Written after fixing two bugs (Animask's blank
@@ -102,18 +113,18 @@ they become "a `.modal-media-col` with 2 `.modal-visual` children").
 - **Iframe embeds** (Figma, Vimeo, Sketchfab): `.modal-visual__media { position: relative; }` + `iframe { position: absolute; inset: 0; width: 100%; height: 100%; }`. No padding-bottom aspect-ratio hack anywhere — flexbox owns the sizing, which is exactly the class of bug this eliminates.
 - **Carousel**: the whole carousel (track + controls) sits inside one `.modal-visual` as a self-contained flex column already (see existing `.carousel` desktop rules) — `.carousel__track` maps to `__media`, `.carousel__controls` maps to `__footer`. Minimal change needed here since the carousel already has the right internal shape.
 
-### Migration directives (for the future pass)
+### Migration directives (as followed)
 
-1. Add the new `.modal-visual` / `__title` / `__media` / `__footer` rules to styles.css; do not delete the old classes yet.
-2. Convert one modal type at a time, screenshot before/after at desktop width, and only then delete that modal's old bespoke CSS block:
-   - Start with `IncidentInSillyville` (already closest to the target shape — has a title today).
-   - Then `Animask`'s `.game-image-grid` (2 visuals, no title/footer needed).
-   - Then `CreepyLilTreehouse` and single-embed modals (`RoyalRacers`, `KaijuBattle`, `ASPCA`, `HandsOffMyHoard`, `VedalonPrimer`, `BugabooPlanet`'s Figma half) — this is also the point to move each modal's fallback link (`figma-fallback-btn`) into `.modal-visual__footer` instead of leaving it as a loose sibling.
-   - Then `MascotAnimation` (video + image, 2 visuals — migrate `.image-caption` into `.modal-visual__footer`).
-   - Then `BugabooPlanet`'s embed+carousel combination and `RoomsTooSmall`'s carousel-only case.
-   - Finally the two bare-image modals (`Tidalflow`, `ShonenFighterTTRPG`) — also an opportunity to drop their inline `style=` attributes in favor of `.modal-visual__media img` defaults.
-3. Once every modal is migrated, delete the now-dead CSS: `.game-image-grid`, `.game-image-container`, `.gameplay-image`, `.modal-video-comparison`, `.modal-video-col`, `.modal-video-label`, `.figma-embed-container` (+ `--portrait`), `.game-embed-container`, `.sketchfab-embed-wrapper`, and all of their desktop-mode overrides in the `@media (min-width: 768px)` block.
-4. Re-screenshot every one of the 13 modals at desktop width as a final regression pass (see inventory table above for the full list) before calling it done.
+1. [x] Add the new `.modal-visual` / `__title` / `__media` / `__footer` rules to styles.css; do not delete the old classes yet.
+2. [x] Convert one modal type at a time, screenshot before/after at desktop width, and only then delete that modal's old bespoke CSS block:
+   - [x] Started with `IncidentInSillyville` (already closest to the target shape — has a title today).
+   - [x] Then `Animask`'s `.game-image-grid` (2 visuals, no title/footer needed). Also made `.modal-visual__title`/`__footer` proper flex containers (not text-only slots) so future content — buttons, captions, attribution links — can drop in cleanly.
+   - [x] Then `CreepyLilTreehouse` and single-embed modals (`RoyalRacers`, `KaijuBattle`, `ASPCA`, `HandsOffMyHoard`, `VedalonPrimer`, `BugabooPlanet`'s Figma half) — each modal's fallback link (`figma-fallback-btn`) moved into `.modal-visual__footer` instead of staying a loose sibling.
+   - [x] Then `MascotAnimation` (video + image, 2 visuals — migrated `.image-caption` into `.modal-visual__footer`).
+   - [x] Then `BugabooPlanet`'s embed+carousel combination and `RoomsTooSmall`'s carousel-only case. Two inventory corrections found during execution: `VedalonPrimer` also had an unlisted carousel (treated like BugabooPlanet — Figma half migrated, carousel wrapped in `.modal-visual` unchanged internally), and `RoomsTooSmall` had an unlisted bare `.modal-video` alongside its carousel (migrated too, not carousel-only as the table said).
+   - [x] Finally the two bare-image modals (`Tidalflow`, `ShonenFighterTTRPG`) — dropped their inline `style=` attributes in favor of `.modal-visual__media img` defaults.
+3. [x] Once every modal was migrated, deleted the now-dead CSS: `.game-image-grid`, `.game-image-container`, `.gameplay-image`, `.image-caption`, `.modal-video-comparison`, `.modal-video-col`, `.modal-video-label`, `.modal-video`, `.figma-embed-container` (+ `--portrait`), `.game-embed-container`, `.sketchfab-embed-wrapper`, and all of their desktop-mode overrides in the `@media (min-width: 768px)` block. (`.modal-video` and `.image-caption` weren't in the original list but were dead by this point too.)
+4. [x] Re-screenshotted every one of the 13 modals at desktop width as a final regression pass — no visual changes from the cleanup commit.
 
 ## Reference
 
