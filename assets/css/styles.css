@@ -1549,6 +1549,25 @@ body.modal-open {
   text-align: center;
 }
 
+.modal-visual__note {
+  margin: 0;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  font-style: italic;
+}
+
+.embed-attribution {
+  margin: 0;
+  font-size: 13px;
+  font-weight: normal;
+  color: #4a4a4a;
+}
+
+.embed-attribution a {
+  font-weight: bold;
+  color: #1caad9;
+}
+
 @media screen and (max-width: 767px) {
   .modal-body--two-col {
     grid-template-columns: 1fr;
