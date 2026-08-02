@@ -1410,6 +1410,7 @@ body.modal-open {
   display: block;
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
 }
 
 .modal-video-comparison {
@@ -1663,6 +1664,12 @@ body.modal-open {
     padding-bottom: 0;
   }
 
+  /* Vimeo/Sketchfab embed: drop padding-bottom trick, use flex height */
+  .modal-media-col .game-embed-container {
+    height: auto;
+    padding-bottom: 0;
+  }
+
   /* Portrait Figma embed: drop fixed 640px, use flex height */
   .modal-media-col .figma-embed-container--portrait {
     height: auto;
@@ -1702,6 +1709,7 @@ body.modal-open {
   .modal-media-col .game-image-grid {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     gap: 1rem;
   }
   .modal-media-col .game-image-container {
