@@ -1351,18 +1351,20 @@ body.modal-open {
 .modal-link-btn {
   display: inline-block;
   background-color: var(--first-color-light);
-  color: var(--first-color-dark);
+  color: var(--accent-color-dark);
   padding: 0.5rem 1.2rem;
   border-radius: 0.4rem;
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
   text-decoration: none;
 }
 
 .modal-link-btn:hover {
   background-color: var(--accent-color-dark);
   color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
 /* ===== MODAL TWO-COLUMN LAYOUT ===== */
