@@ -54,10 +54,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create initial set of particles
         createInitialParticles(particlesContainer, colors, shapes);
 
-        // Hover effect - create particles
-        cvButton.addEventListener('mouseenter', function() {
+        // Continuous ambient particle animation, always running
+        animateParticles(particlesContainer, colors, shapes);
+        setInterval(() => {
             animateParticles(particlesContainer, colors, shapes);
-        });
+        }, 2000);
 
         // Click effect - burst of particles
         cvButton.addEventListener('click', function(e) {
