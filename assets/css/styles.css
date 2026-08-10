@@ -563,7 +563,7 @@ img {
 
 /* ===== SKILLS =====*/
 .skills__container {
-  row-gap: 2rem;
+  row-gap: 3rem;
 }
 
 .skills__subtitle {
@@ -631,12 +631,17 @@ img {
 }
 
 .custom-icon {
+  display: inline-block;
   width: 1.1rem;
   height: 1.1rem;
   margin-right: 0.5rem;
-  fill: currentColor;
-  filter: invert(50%) sepia(10%) saturate(1000%) hue-rotate(175deg)
-    brightness(90%) contrast(95%);
+  background-color: currentColor;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
   transition: transform 0.3s ease;
 }
 
@@ -1111,8 +1116,7 @@ body.modal-open {
     width: var(--nav-width);
   }
   .about__container:not(.about__container--swap),
-  .contact__container,
-  .skills__container {
+  .contact__container {
     grid-template-columns: repeat(2, 1fr);
   }
   .about__data {
