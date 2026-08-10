@@ -232,8 +232,8 @@ img {
 }
 
 .home__img {
-  width: 192px;
-  height: 192px;
+  width: 230px;
+  height: 230px;
   background-color: var(--first-color);
   border-radius: 50%;
   overflow: hidden;
@@ -257,25 +257,6 @@ img {
   font-size: var(--small-font-size);
   color: var(--first-color-dark);
   margin-bottom: var(--mb-5);
-}
-
-.home__social {
-  margin-bottom: 5rem;
-}
-
-.home__social-link {
-  display: inline-flex;
-  background-color: var(--accent-color-dark);
-  color: var(--white-color);
-  font-size: 1.1rem;
-  border-radius: 50%;
-  padding: 0.4rem;
-  margin: 0 var(--mb-1);
-  transition: 0.3s;
-}
-
-.home__social-link:hover {
-  background-color: var(--accent-color-darker);
 }
 
 .home__button {
@@ -568,6 +549,16 @@ img {
   font-size: 1.5rem;
   color: var(--first-color);
   margin-right: var(--mb-4);
+}
+
+.about__information-link {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.about__information-link:hover {
+  color: var(--first-color);
 }
 
 /* ===== SKILLS =====*/
@@ -1120,8 +1111,8 @@ body.modal-open {
     width: var(--nav-width);
   }
   .about__container:not(.about__container--swap),
-  .skills__container,
-  .contact__container {
+  .contact__container,
+  .skills__container {
     grid-template-columns: repeat(2, 1fr);
   }
   .about__data {
